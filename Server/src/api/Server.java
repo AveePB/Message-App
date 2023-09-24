@@ -14,8 +14,8 @@ import log.Logger;
 
 
 public class Server {
-    ServerSocket sock;
-    Logger log;
+    private ServerSocket sock;
+    private Logger log;
 
     public Server(Logger logger, int port) {
         this.log = logger;
@@ -38,7 +38,7 @@ public class Server {
                 InputStream in = clientSock.getInputStream();
                 OutputStream out = clientSock.getOutputStream();
 
-                new ClientHandler(in, out).start();
+                new ClientHandler(in, out, this.log).start();
             }
             catch (IOException e) {
                 break;
