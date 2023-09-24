@@ -1,6 +1,8 @@
 package log;
 
+//Java Language (Fundamental Classes)
 import java.lang.String;
+
 
 public enum LogLvl {
     FATAL("[FATAL]"),
