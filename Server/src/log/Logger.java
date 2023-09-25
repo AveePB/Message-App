@@ -21,10 +21,10 @@ public class Logger {
     private static final boolean IS_APPENDED = true;
     private static final String LOG_DIR = "./logs/";
 
-    private String output_dir;
+    private String outputDir;
 
-    public Logger(String file_name) {
-        this.output_dir = Logger.LOG_DIR + file_name;
+    public Logger(String fileName) {
+        this.outputDir = Logger.LOG_DIR + fileName;
     }
 
     private String createLogMsg(LogLvl lvl, String msg) {
@@ -35,16 +35,19 @@ public class Logger {
     }
 
     private void createLogDirIfNotExits() throws IOException {
-        Path log_path = Paths.get(LOG_DIR);
-        if (Files.exists(log_path)) return;
-        Files.createDirectory(log_path);
+        Path logPath = Paths.get(LOG_DIR);
+        if (Files.exists(logPath)) return;
+        Files.createDirectory(logPath);
     }
 
     private void log(LogLvl lvl, String msg) {
+        String logMsg = createLogMsg(lvl, msg);
+        System.out.print(logMsg);
+
         try {
             createLogDirIfNotExits();
-            FileWriter fw = new FileWriter(this.output_dir, Logger.IS_APPENDED);
-            fw.write(createLogMsg(lvl, msg));
+            FileWriter fw = new FileWriter(this.outputDir, Logger.IS_APPENDED);
+            fw.write(logMsg);
             fw.close();
         }
         catch (IOException ignored) { }
