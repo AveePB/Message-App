@@ -13,15 +13,9 @@ public class Main {
         server.run();
         /*
          * TO DO:
-         * 1.Create Conversation Class
-         * 2.Create Request Types
-         * 3.Create Handler Class
-         * 4.Add new Functionalities:
-         *  - Adding New Friends
-         *  - Sending Messages
-         *  - Log In/Out
-         *  - Register Account
-         * 5.Secure Program
+         * 4.Handle requests
+         * 6.Secure Program
+         * 7.Save All Data (Optional)
          */
     }
 }

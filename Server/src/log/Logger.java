@@ -8,13 +8,13 @@ import java.io.FileWriter;
 import java.nio.file.Paths;
 import java.nio.file.Files;
 
-//Java Language (Fundamental Classes)
-import java.lang.StringBuilder;
-import java.lang.String;
-
 //Java Utilities (Popular Classes)
 import java.nio.file.Path;
 import java.util.Date;
+
+//Java Language (Fundamental Classes)
+import java.lang.StringBuilder;
+import java.lang.String;
 
 
 public class Logger {
