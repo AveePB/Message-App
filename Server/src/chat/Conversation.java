@@ -9,7 +9,7 @@ import java.lang.String;
 
 
 public class Conversation {
-    private List<Message> messages;
+    protected List<Message> messages;
     private List<User> members;
 
     public Conversation(User u1, User u2) {
@@ -29,7 +29,7 @@ public class Conversation {
 
         for (User u: this.members) {
             if (u != author && u.isOnline()) {
-                u.sendResponseNewMessage(msg);
+                u.deliverMessage(msg);
             }
         }
     }

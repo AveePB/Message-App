@@ -11,9 +11,9 @@ public class Main {
         Logger logger = new Logger(LOG_FILE_NAME);
         Server server = new Server(logger, PORT);
         server.run();
+
         /*
          * TO DO:
-         * 4.Handle requests
          * 6.Secure Program
          * 7.Save All Data (Optional)
          */

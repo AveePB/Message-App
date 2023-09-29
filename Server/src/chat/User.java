@@ -4,9 +4,12 @@ package chat;
 import java.io.PrintWriter;
 
 //Java Utilities (Popular Classes)
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 //Java Language (Fundamental Classes)
 import java.lang.String;
@@ -27,10 +30,6 @@ public class User {
         this.password = password;
     }
 
-    public void addContact(String newContactEmail, Conversation newConversation) {
-        this.contacts.put(newContactEmail, newConversation);
-    }
-
     public void setStatusOnline(PrintWriter pw) {
         this.pw = pw;
     }
@@ -43,6 +42,10 @@ public class User {
         return (this.pw != null);
     }
 
+    public boolean isFriend(String email) {
+        return this.contacts.containsKey(email);
+    }
+
     public String getEmail() {
         return this.email;
     }
@@ -51,36 +54,28 @@ public class User {
         return this.password;
     }
 
-    public void sendResponseListContacts() {
-        this.pw.println(Response.CONTACT_LIST);
-
-        for (String contactEmail: this.contacts.keySet())
-            this.pw.println(contactEmail);
-
-        this.pw.flush();
+    public Set<String> getAllContacts() {
+        return this.contacts.keySet();
     }
 
-    public void sendResponsePreviousMessages(List<Message> messages) {
-        this.pw.println(Response.PREVIOUS_MESSAGES.getStr());
+    public List<Message> getPreviousMessages(String contactEmail) {
+        Conversation conversation = this.contacts.getOrDefault(contactEmail, null);
+        if (conversation == null) return null;
 
-        for (Message msg: messages)
-            this.pw.println(msg.toString());
-
-        this.pw.flush();
+        return conversation.messages;
     }
 
-    public void sendResponseNewMessage(Message msg) {
+    public Conversation getConversation(String contactEmail) {
+        return this.contacts.getOrDefault(contactEmail, null);
+    }
+
+    protected void deliverMessage(Message msg) {
         this.pw.println(Response.NEW_MESSAGE);
-
         this.pw.println(msg.toString());
-
         this.pw.flush();
     }
 
-
-    public void sendResponse(Response rep) {
-        this.pw.println(rep.getStr());
-
-        this.pw.flush();
+    protected void addContact(String newContactEmail, Conversation newConversation) {
+        this.contacts.put(newContactEmail, newConversation);
     }
 }

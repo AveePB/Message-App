@@ -17,11 +17,13 @@ import java.util.Map;
 import java.lang.String;
 
 //Java Custom Packages
-import log.Logger;
 import chat.User;
+import log.Logger;
 
 
 public class Server {
+    protected static final String SEP = "_\\+S3WFSDFSFDSFdP\\+_";
+
     private Map<String, User> db;
     private ServerSocket sock;
     private Logger log;
