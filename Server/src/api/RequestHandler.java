@@ -12,7 +12,7 @@ import java.util.Set;
 import java.lang.String;
 
 //Java Custom Packages
-import chat.Conversation;
+import chat.Chat;
 import chat.Message;
 import chat.User;
 import log.Logger;
@@ -40,22 +40,22 @@ public class RequestHandler {
         this.pw.flush();
     }
 
-    protected boolean isRegisteredEmail(String email) {
-        return this.db.containsKey(email);
+    protected boolean isRegisteredEmail(String nickName) {
+        return this.db.containsKey(nickName);
     }
 
-    protected boolean isPasswordValid(String email, String password) {
-        return this.db.get(email).getPassword().equals(password);
+    protected boolean isPasswordValid(String nickName, String password) {
+        return this.db.get(nickName).getPassword().equals(password);
     }
 
     protected boolean isUserLoggedIn() {
-        return (user != null);
+        return (this.user != null);
     }
 
-    protected void logIn(String email, String password) {
+    protected void logIn(String nickName, String password) {
 
-        if (isRegisteredEmail(email) && isPasswordValid(email, password)) {
-            this.user = this.db.get(email);
+        if (isRegisteredEmail(nickName) && isPasswordValid(nickName, password)) {
+            this.user = this.db.get(nickName);
             this.user.setStatusOnline(this.pw);
 
             sendResponse(Response.LOGIN_SUCCESS, "");
@@ -65,13 +65,13 @@ public class RequestHandler {
         }
     }
 
-    protected void register(String email, String password) {
+    protected void register(String nickName, String password) {
 
-        if (!isRegisteredEmail(email)) {
-            this.user = new User(email, password);
+        if (!isRegisteredEmail(nickName)) {
+            this.user = new User(nickName, password);
             this.user.setStatusOnline(this.pw);
 
-            this.db.put(email, this.user);
+            this.db.put(nickName, this.user);
             sendResponse(Response.REGISTER_SUCCESS, "");
         }
         else {
@@ -86,8 +86,8 @@ public class RequestHandler {
         this.user = null;
     }
 
-    protected void readConversation(String contactEmail) {
-        List<Message> messages = this.user.getPreviousMessages(contactEmail);
+    protected void readConversation(String friendNickName) {
+        List<Message> messages = this.user.getPreviousMessages(friendNickName);
 
         if (messages != null) {
             StringBuilder args = new StringBuilder();
@@ -102,11 +102,11 @@ public class RequestHandler {
         }
     }
 
-    protected void sendMessage(String contactEmail,  String msg) {
-        Conversation conversation = this.user.getConversation(contactEmail);
+    protected void sendMessage(String friendNickName,  String msg) {
+        Chat chat = this.user.getChat(friendNickName);
 
-        if (conversation != null) {
-            conversation.sendMessage(msg, this.user);
+        if (chat != null) {
+            chat.sendMessage(msg, this.user);
             sendResponse(Response.OPERATION_SUCCESS, "");
         }
         else {
@@ -114,23 +114,23 @@ public class RequestHandler {
         }
     }
 
-    protected void addContact(String contactEmail) {
-        if ((!isRegisteredEmail(contactEmail)) || (this.user.isFriend(contactEmail))) {
+    protected void addContact(String friendNickName) {
+        if ((!isRegisteredEmail(friendNickName)) || (this.user.isFriend(friendNickName))) {
             sendResponse(Response.INVALID_DATA, "");
             return;
         }
 
-        new Conversation(this.user, this.db.get(contactEmail));
+        new Chat(this.user, this.db.get(friendNickName));
         sendResponse(Response.OPERATION_SUCCESS, "");
     }
 
-    protected void listContacts() {
-        Set<String> contacts = this.user.getAllContacts();
+    protected void listFriends() {
+        Set<String> friends = this.user.getAllFriends();
         StringBuilder args = new StringBuilder();
 
-        for (String contact: contacts)
-            args.append(Server.SEP).append(contact);
+        for (String friend: friends)
+            args.append(Server.SEP).append(friend);
 
-        sendResponse(Response.CONTACT_LIST, args.toString());
+        sendResponse(Response.FRIEND_LIST, args.toString());
     }
 }

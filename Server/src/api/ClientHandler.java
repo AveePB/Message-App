@@ -9,7 +9,6 @@ import java.io.PrintWriter;
 import java.io.IOException;
 
 //Java Utilities (Popular Classes)
-import java.util.Arrays;
 import java.util.Map;
 
 //Java Language (Fundamental Classes)
@@ -52,11 +51,11 @@ public class ClientHandler extends Thread {
         //REQ[I] <- Additional arguments
         try {
             if ((req.length == 3) && (req[0].equals(Request.LOGIN.getStr()))) {
-                //REQ[1] <- email, REQ[2] <- password
+                //REQ[1] <- nickName, REQ[2] <- password
                 this.rh.logIn(req[1], req[2]);
             }
             else if ((req.length == 3) && (req[0].equals(Request.REGISTER.getStr()))) {
-                //REQ[1] <- email, REQ[2] <- password
+                //REQ[1] <- nickName, REQ[2] <- password
                 this.rh.register(req[1], req[2]);
             }
             else {
@@ -75,20 +74,20 @@ public class ClientHandler extends Thread {
             if ((req.length == 1) && (req[0].equals(Request.LOGOUT.getStr()))) {
                 this.rh.logOut();
             }
-            else if ((req.length == 2) && (req[0].equals(Request.READ_CONVERSATION.getStr()))) {
-                //REQ[1] <- contactEmail
+            else if ((req.length == 2) && (req[0].equals(Request.READ_CHAT_MESSAGES.getStr()))) {
+                //REQ[1] <- friendNickName
                 this.rh.readConversation(req[1]);
             }
             else if ((req.length == 3) && (req[0].equals(Request.SEND_MSG.getStr()))) {
-                //REQ[1] <- contactEmail, REQ[2] <- message
+                //REQ[1] <- friendNickName, REQ[2] <- message
                 this.rh.sendMessage(req[1], req[2]);
             }
-            else if ((req.length == 2) && (req[0].equals(Request.ADD_CONTACT.getStr()))) {
-                //REQ[1] <- contactEmail
+            else if ((req.length == 2) && (req[0].equals(Request.ADD_FRIEND.getStr()))) {
+                //REQ[1] <- friendNickName
                 this.rh.addContact(req[1]);
             }
-            else if ((req.length == 1) && (req[0].equals(Request.LIST_CONTACTS.getStr()))) {
-                this.rh.listContacts();
+            else if ((req.length == 1) && (req[0].equals(Request.LIST_FRIENDS.getStr()))) {
+                this.rh.listFriends();
             }
             else {
                 throw new IOException();

@@ -8,16 +8,16 @@ import java.util.List;
 import java.lang.String;
 
 
-public class Conversation {
+public class Chat {
     protected List<Message> messages;
     private List<User> members;
 
-    public Conversation(User u1, User u2) {
+    public Chat(User u1, User u2) {
         this.messages = new ArrayList<>();
         this.members = new ArrayList<>();
 
-        u1.addContact(u2.getEmail(), this);
-        u2.addContact(u1.getEmail(), this);
+        u1.addFriend(u2.getNickName(), this);
+        u2.addFriend(u1.getNickName(), this);
 
         this.members.add(u1);
         this.members.add(u2);

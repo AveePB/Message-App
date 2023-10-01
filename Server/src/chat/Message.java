@@ -15,7 +15,7 @@ public class Message {
 
     @Override
     public String toString() {
-        return this.author.getEmail() + ": " + this.content;
+        return this.author.getNickName() + ": " + this.content;
     }
 
     public String getContent() {

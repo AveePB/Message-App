@@ -4,11 +4,9 @@ package chat;
 import java.io.PrintWriter;
 
 //Java Utilities (Popular Classes)
-import java.util.ArrayList;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.HashSet;
 import java.util.Set;
 
 //Java Language (Fundamental Classes)
@@ -19,14 +17,14 @@ import api.Response;
 
 
 public class User {
-    private Map<String, Conversation> contacts;
-    private final String email;
+    private Map<String, Chat> friends;
+    private final String nickName;
     private final String password;
     private PrintWriter pw;
 
-    public User(String email, String password) {
-        this.contacts = new HashMap<>();
-        this.email = email;
+    public User(String nickName, String password) {
+        this.friends = new HashMap<>();
+        this.nickName = nickName;
         this.password = password;
     }
 
@@ -42,31 +40,31 @@ public class User {
         return (this.pw != null);
     }
 
-    public boolean isFriend(String email) {
-        return this.contacts.containsKey(email);
+    public boolean isFriend(String friendNickName) {
+        return this.friends.containsKey(friendNickName);
     }
 
-    public String getEmail() {
-        return this.email;
+    public String getNickName() {
+        return this.nickName;
     }
 
     public String getPassword() {
         return this.password;
     }
 
-    public Set<String> getAllContacts() {
-        return this.contacts.keySet();
+    public Set<String> getAllFriends() {
+        return this.friends.keySet();
     }
 
-    public List<Message> getPreviousMessages(String contactEmail) {
-        Conversation conversation = this.contacts.getOrDefault(contactEmail, null);
-        if (conversation == null) return null;
+    public List<Message> getPreviousMessages(String friendNickName) {
+        Chat chat = this.friends.getOrDefault(friendNickName, null);
+        if (chat == null) return null;
 
-        return conversation.messages;
+        return chat.messages;
     }
 
-    public Conversation getConversation(String contactEmail) {
-        return this.contacts.getOrDefault(contactEmail, null);
+    public Chat getChat(String friendNickName) {
+        return this.friends.getOrDefault(friendNickName, null);
     }
 
     protected void deliverMessage(Message msg) {
@@ -75,7 +73,7 @@ public class User {
         this.pw.flush();
     }
 
-    protected void addContact(String newContactEmail, Conversation newConversation) {
-        this.contacts.put(newContactEmail, newConversation);
+    protected void addFriend(String newFriendNickName, Chat newChat) {
+        this.friends.put(newFriendNickName, newChat);
     }
 }
