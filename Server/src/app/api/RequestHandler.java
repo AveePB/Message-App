@@ -1,4 +1,4 @@
-package api;
+package app.api;
 
 //Java I/O (Input and Output)
 import java.io.PrintWriter;
@@ -12,10 +12,10 @@ import java.util.Set;
 import java.lang.String;
 
 //Java Custom Packages
-import chat.Chat;
-import chat.Message;
-import chat.User;
-import log.Logger;
+import app.chat.Chat;
+import app.chat.Message;
+import app.chat.User;
+import app.log.Logger;
 
 
 public class RequestHandler {

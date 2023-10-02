@@ -1,4 +1,4 @@
-package chat;
+package app.chat;
 
 //Java I/O (Input and Output)
 import java.io.PrintWriter;
@@ -13,7 +13,7 @@ import java.util.Set;
 import java.lang.String;
 
 //Java Custom Packages
-import api.Response;
+import app.api.Response;
 
 
 public class User {

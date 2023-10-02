@@ -1,10 +1,10 @@
 //Java Custom Packages
-import api.Server;
-import log.Logger;
+import app.api.Server;
+import app.log.Logger;
 
 
 public class Main {
-    private static final String LOG_FILE_NAME = "ServerLogs.log";
+    private static final String LOG_FILE_NAME = "ServerLogs.app.log";
     private static final int PORT = 55555;
 
     public static void main(String[] args) {

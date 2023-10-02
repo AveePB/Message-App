@@ -1,4 +1,4 @@
-package api;
+package app.api;
 
 //Java Networking (API)
 import java.net.ServerSocket;
@@ -17,8 +17,8 @@ import java.util.Map;
 import java.lang.String;
 
 //Java Custom Packages
-import chat.User;
-import log.Logger;
+import app.chat.User;
+import app.log.Logger;
 
 
 public class Server {

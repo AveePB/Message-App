@@ -1,4 +1,4 @@
-package log;
+package app.log;
 
 //Java Language (Fundamental Classes)
 import java.lang.String;

@@ -1,4 +1,4 @@
-package chat;
+package app.chat;
 
 //Java Utilities (Popular Classes)
 import java.util.ArrayList;

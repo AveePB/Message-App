@@ -1,4 +1,4 @@
-package api;
+package app.api;
 
 //Java I/O (Input and Output)
 import java.io.InputStreamReader;
@@ -15,8 +15,8 @@ import java.util.Map;
 import java.lang.String;
 
 //Java Custom Packages
-import chat.User;
-import log.Logger;
+import app.chat.User;
+import app.log.Logger;
 
 
 public class ClientHandler extends Thread {

@@ -1,4 +1,4 @@
-package chat;
+package app.chat;
 
 //Java Language (Fundamental Classes)
 import java.lang.String;

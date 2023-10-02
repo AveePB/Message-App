@@ -1,4 +1,4 @@
-package log;
+package app.log;
 
 //Java I/O (Input and Output)
 import java.io.IOException;
@@ -35,7 +35,7 @@ public class Logger {
     }
 
     private void createLogDirIfNotExits() throws IOException {
-        Path logPath = Paths.get(LOG_DIR);
+        Path logPath = Paths.get(Logger.LOG_DIR);
         if (Files.exists(logPath)) return;
         Files.createDirectory(logPath);
     }
