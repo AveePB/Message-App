@@ -5,13 +5,12 @@ import java.lang.String;
 
 
 public enum Request {
-    LOGIN("LOGIN"), //LOGIN.NICK_NAME.PASSWORD
+    LOGIN("LOGIN"), //LOGIN.NICKNAME.PASSWORD
     LOGOUT("LOGOUT"), //LOGOUT
-    REGISTER("REGISTER"), //REGISTER.NICK_NAME.PASSWORD
-    ADD_FRIEND("ADD_FRIEND"), //ADD_FRIEND.FRIEND_NICK_NAME
-    SEND_MSG("SEND_MSG"), //SEND_MSG.FRIEND_NICK_NAME.MESSAGE_CONTENT
-    READ_CHAT_MESSAGES("READ_CHAT_MESSAGES"), //READ_CHAT_MESSAGES.FRIEND_NICK_NAME
-    LIST_FRIENDS("LIST_FRIENDS"); //LIST_FRIENDS
+    REGISTER("REGISTER"), //REGISTER.NICKNAME.PASSWORD
+    CREATE_CHAT("CREATE_CHAT"), //CREATE_CHAT.NICKNAME
+    CREATE_MSG("CREATE_MSG"), //CREATE_MSG.NICKNAME.MSG
+    GET_CHAT_USERS("GET_CHAT_USERS"); //GET_CHAT_USERS
 
     private final String str;
 
@@ -19,7 +18,8 @@ public enum Request {
         this.str = str;
     }
 
-    public String getStr() {
+    @Override
+    public String toString() {
         return this.str;
     }
 }

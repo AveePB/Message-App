@@ -3,61 +3,67 @@ package app.api;
 //Java I/O (Input and Output)
 import java.io.PrintWriter;
 
-//Java Utilities (Popular Classes)
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 //Java Language (Fundamental Classes)
 import java.lang.String;
 
 //Java Custom Packages
-import app.chat.Chat;
-import app.chat.Message;
-import app.chat.User;
+import app.db.Database;
+import app.db.User;
 import app.log.Logger;
 
 
 public class RequestHandler {
-    private Map<String, User> db;
     private PrintWriter pw;
-    private Logger log;
+    private Database db;
+    private Logger logger;
 
-    private String ip_address;
+    private String ipAddress;
     private User user;
 
-    public RequestHandler(PrintWriter pw, Map<String, User> db, Logger log, String ip_address) {
+    /**
+     * Constructs request handler object.
+     * @param pw the client's print writer object.
+     * @param db the MySQL database interface object.
+     * @param logger the server logger.
+     * @param ipAddress the client's ip address.
+     */
+    public RequestHandler(PrintWriter pw, Database db, Logger logger, String ipAddress) {
         this.pw = pw;
         this.db = db;
-        this.log = log;
 
-        this.ip_address = ip_address;
+        this.logger = logger;
+        this.ipAddress = ipAddress;
     }
 
+    /**
+     * Sends response to client.
+     * @param rep the request type.
+     * @param args additional compressed arguments.
+     */
     private void sendResponse(Response rep, String args) {
-        this.log.logInfo(rep.getStr() + args + " sent to " + this.ip_address);
-        this.pw.println(rep.getStr() + args);
+        this.logger.logInfo(rep + args + " sent to " + this.ipAddress);
+        this.pw.println(rep + args);
         this.pw.flush();
     }
 
-    protected boolean isRegisteredEmail(String nickName) {
-        return this.db.containsKey(nickName);
-    }
-
-    protected boolean isPasswordValid(String nickName, String password) {
-        return this.db.get(nickName).getPassword().equals(password);
-    }
-
+    /**
+     * Returns true if a user is logged in otherwise false.
+     * @return the user's activity.
+     */
     protected boolean isUserLoggedIn() {
         return (this.user != null);
     }
 
-    protected void logIn(String nickName, String password) {
+    /**
+     * Handles LOG_IN request.
+     * @param nickname the user's nickname.
+     * @param password the user's password.
+     */
+    protected void logIn(String nickname, String password) {
+        this.user = this.db.getUser(nickname, password);
 
-        if (isRegisteredEmail(nickName) && isPasswordValid(nickName, password)) {
-            this.user = this.db.get(nickName);
-            this.user.setStatusOnline(this.pw);
-
+        if (isUserLoggedIn()) {
+            this.db.setUserStatusOnline(this.user.getId(), this.pw);
             sendResponse(Response.LOGIN_SUCCESS, "");
         }
         else {
@@ -65,13 +71,16 @@ public class RequestHandler {
         }
     }
 
-    protected void register(String nickName, String password) {
+    /**
+     * Handles REGISTER request.
+     * @param nickname the user's nickname.
+     * @param password the user's password.
+     */
+    protected void register(String nickname, String password) {
+        this.user = this.db.registerUser(nickname, password);
 
-        if (!isRegisteredEmail(nickName)) {
-            this.user = new User(nickName, password);
-            this.user.setStatusOnline(this.pw);
-
-            this.db.put(nickName, this.user);
+        if (isUserLoggedIn()) {
+            this.db.setUserStatusOnline(this.user.getId(), this.pw);
             sendResponse(Response.REGISTER_SUCCESS, "");
         }
         else {
@@ -79,58 +88,67 @@ public class RequestHandler {
         }
     }
 
+    /**
+     * Handles LOG_OUT request.
+     */
     protected void logOut() {
         if (this.user == null) return;
-
-        this.user.setStatusOffline();
+        this.db.setUserStatusOffline(this.user.getId());
         this.user = null;
     }
 
-    protected void readConversation(String friendNickName) {
-        List<Message> messages = this.user.getPreviousMessages(friendNickName);
+    /**
+     * Handles CREATE_CHAT request.
+     * @param nickname the user's nickname.
+     */
+    protected void createChat(String nickname) {
+        try {
+            User user2 = this.db.getUser(nickname);
+            int ans = this.db.createChat(this.user.getId(), user2.getId());
 
-        if (messages != null) {
-            StringBuilder args = new StringBuilder();
-
-            for (Message msg: messages)
-                args.append(Server.SEP).append(msg.toString());
-
-            sendResponse(Response.PREVIOUS_MESSAGES, args.toString());
+            if (ans == 1)
+                sendResponse(Response.CHAT_CREATION_SUCCESS, "");
+            else if (ans == 0)
+                sendResponse(Response.CHAT_CREATION_STOPPED, "");
+            else
+                throw new Exception();
         }
-        else {
-            sendResponse(Response.INVALID_DATA, "");
-        }
-    }
-
-    protected void sendMessage(String friendNickName,  String msg) {
-        Chat chat = this.user.getChat(friendNickName);
-
-        if (chat != null) {
-            chat.sendMessage(msg, this.user);
-            sendResponse(Response.OPERATION_SUCCESS, "");
-        }
-        else {
-            sendResponse(Response.INVALID_DATA, "");
+        catch (Exception e) {
+            sendResponse(Response.CHAT_CREATION_FAILED, "");
         }
     }
 
-    protected void addContact(String friendNickName) {
-        if ((!isRegisteredEmail(friendNickName)) || (this.user.isFriend(friendNickName))) {
-            sendResponse(Response.INVALID_DATA, "");
-            return;
-        }
+    /**
+     * Handles CREATE_MESSAGE request.
+     * @param nickname the user's nickname.
+     * @param msgContent the message content.
+     */
+    protected void createMessage(String nickname, String msgContent) {
+        try {
+            User recipient = this.db.getUser(nickname);
+            if (this.db.createMessage(this.user.getId(), recipient.getId(), msgContent)) {
+                this.db.sendMessage(recipient.getId(),  this.user.getNickname(), msgContent);
 
-        new Chat(this.user, this.db.get(friendNickName));
-        sendResponse(Response.OPERATION_SUCCESS, "");
+                sendResponse(Response.MSG_CREATION_SUCCESS, "");
+            }
+            else {
+                throw new Exception();
+            }
+        }
+        catch (Exception e) {
+            sendResponse(Response.MSG_CREATION_FAILED, "");
+        }
     }
 
-    protected void listFriends() {
-        Set<String> friends = this.user.getAllFriends();
-        StringBuilder args = new StringBuilder();
-
-        for (String friend: friends)
-            args.append(Server.SEP).append(friend);
-
-        sendResponse(Response.FRIEND_LIST, args.toString());
+    /**
+     * Handles GET_CHAT_USERS request.
+     */
+    protected void getChatUsers() {
+        try {
+            sendResponse(Response.CHAT_USERS, this.db.getChatUsers(this.user.getId()));
+        }
+        catch (Exception e) {
+            sendResponse(Response.CHAT_USERS, "");
+        }
     }
 }

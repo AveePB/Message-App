@@ -1,21 +1,23 @@
+//Java SQL (Structured Query Language)
+import java.sql.SQLException;
+
 //Java Custom Packages
 import app.api.Server;
 import app.log.Logger;
+import app.Settings;
 
 
 public class Main {
-    private static final String LOG_FILE_NAME = "ServerLogs.app.log";
-    private static final int PORT = 55555;
-
     public static void main(String[] args) {
-        Logger logger = new Logger(LOG_FILE_NAME);
-        Server server = new Server(logger, PORT);
-        server.run();
+        Logger logger = new Logger(Settings.LOGS_FILE_NAME);
 
-        /*
-         * TO DO:
-         * 7.Save All Data
-         * 8.Load All Data
-         */
+        try {
+            Server server = new Server(logger, Settings.API_PORT);
+            server.run();
+        }
+        catch (SQLException e) {
+            logger.logFatal("The MySQL Database isn't connected!");
+            logger.logFatal(e.toString());
+        }
     }
 }

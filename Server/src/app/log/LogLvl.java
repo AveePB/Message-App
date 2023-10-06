@@ -11,9 +11,14 @@ public enum LogLvl {
     INFO("[INFO]"),
     DEBUG("[DEBUG]");
 
-    protected final String str;
+    private final String str;
 
     LogLvl(String str) {
         this.str = str;
+    }
+
+    @Override
+    public String toString() {
+        return this.str;
     }
 }
