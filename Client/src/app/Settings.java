@@ -1,4 +1,4 @@
-package app.forms;
+package app;
 
 //Java Language (Fundamental Classes)
 import java.lang.String;
