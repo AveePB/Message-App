@@ -1,4 +1,8 @@
 package app.forms.mainform;
 
-public class MainForm {
+//Java Custom Packages
+import app.forms.Form;
+
+
+public class MainForm implements Form{
 }
