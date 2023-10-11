@@ -5,4 +5,9 @@ import app.forms.Form;
 
 
 public class LogInForm implements Form {
+
+    @Override
+    public int getNextFormCode() {
+        return 0;
+    }
 }

@@ -15,23 +15,24 @@ public class App {
     public static final int NO_FORM = 4;
 
     //The application forms:
-    Form logInForm;
-    Form mainForm;
-    Form signUpForm;
+    private Form logInForm;
+    private Form mainForm;
+    private Form signUpForm;
 
-    //The application's API:
-    Client client;
+    //The application API:
+    private Client client;
 
     /**
      * Constructs an app object.
      */
     public App() {
-        /*
-        initializing client object.
-        initializing log in form.
-        initializing main form.
-        initializing sign up form.
-        */
+        //Initializing the API.
+        this.client = new Client(Client.API_SEPARATOR, Client.API_SERVER_IP_ADDRESS, Client.API_SERVER_PORT);
+
+        //Initializing the application forms.
+        this.logInForm = new LogInForm();
+        this.mainForm = new MainForm();
+        this.signUpForm = new SignUpForm();
     }
 
     /**
@@ -42,13 +43,13 @@ public class App {
 
         while (true) {
             if (openedWindow == App.LOGIN_FORM) {
-                //openedWindow = this.logInForm.getNextFormCode();
+                openedWindow = this.logInForm.getNextFormCode();
             }
             else if (openedWindow == App.MAIN_FORM) {
-                //openedWindow = this.mainForm.getNextFormCode();
+                openedWindow = this.mainForm.getNextFormCode();
             }
             else if (openedWindow == App.SIGN_UP_FORM) {
-                //openedWindow = this.signUpForm.getNextFormCode();
+                openedWindow = this.signUpForm.getNextFormCode();
             }
             else {
                 break;

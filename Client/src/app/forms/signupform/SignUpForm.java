@@ -4,5 +4,10 @@ package app.forms.signupform;
 import app.forms.Form;
 
 
-public class SignUpForm implements Form{
+public class SignUpForm implements Form {
+
+    @Override
+    public int getNextFormCode() {
+        return 0;
+    }
 }
