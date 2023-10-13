@@ -13,6 +13,8 @@ public class Main {
         catch (IOException ignored) { }
         /*
          * 1.Create design of MainWindow class.
+         * 1.1 Create Message Workshop Area
+         * 1.2 Add Base64 ENCODING TO CONNECTIONS!!!
          * 2.Create MainWindow class.
          * 3.Create MainWindow action listeners.
          */

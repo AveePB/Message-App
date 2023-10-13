@@ -19,6 +19,7 @@ import java.lang.String;
 //Java Custom Packages
 import app.api.Client;
 import app.api.Response;
+import app.windows.mainwindow.MainWindow;
 
 
 public class AL_LogInBtn implements ActionListener {
@@ -64,7 +65,7 @@ public class AL_LogInBtn implements ActionListener {
             String[] response = this.client.getResponse();
 
             if ((response.length == 1) && (response[0].equals(Response.LOGIN_SUCCESS.toString()))) {
-                //OPENS MAIN WINDOW...
+                new MainWindow(this.client).open();
                 this.frame.dispose();
             }
             else if ((response.length == 1) && (response[0].equals(Response.LOGIN_FAILED.toString()))) {
