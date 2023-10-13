@@ -1,6 +1,8 @@
-package app.api;
+package app.api.client;
 
 //Java Networking (API)
+import app.api.Request;
+
 import java.io.InputStreamReader;
 import java.net.Socket;
 
@@ -20,7 +22,7 @@ public class Client {
     public static final int API_SERVER_PORT = 55555;
 
     //The Client parameters:
-    private boolean isLogged;
+    private boolean isLoggedIn;
     private String separator;
     private String serverIp;
     private int serverPort;
@@ -46,7 +48,7 @@ public class Client {
         this.serverPort = serverPort;
 
         this.sock = new Socket(this.serverIp, this.serverPort);
-        this.isLogged = false;
+        this.isLoggedIn = false;
 
         this.br = new BufferedReader(new InputStreamReader(this.sock.getInputStream()));
         this.pw = new PrintWriter(this.sock.getOutputStream());
@@ -58,7 +60,7 @@ public class Client {
      * @param password the user password.
      */
     public void sendLoginRequest(String nickname, String password) {
-        if (this.isLogged) return;
+        if (this.isLoggedIn) return;
 
         this.pw.println(Request.LOGIN + this.separator + nickname + this.separator + password);
         this.pw.flush();
@@ -71,7 +73,7 @@ public class Client {
      * Sends the logout request to the server.
      */
     public void sendLogoutRequest() {
-        if (!this.isLogged) return;
+        if (!this.isLoggedIn) return;
 
         this.pw.println(Request.LOGOUT);
         this.pw.flush();
@@ -83,7 +85,7 @@ public class Client {
      * @param password the user password.
      */
     public void sendRegisterRequest(String nickname, String password) {
-        if (this.isLogged) return;
+        if (this.isLoggedIn) return;
 
         this.pw.println(Request.REGISTER + this.separator + nickname + this.separator + password);
         this.pw.flush();
@@ -97,7 +99,7 @@ public class Client {
      * @param nickname the user nickname.
      */
     public void sendCreateChatRequest(String nickname) {
-        if (!this.isLogged) return;
+        if (!this.isLoggedIn) return;
 
         this.pw.println(Request.CREATE_CHAT + this.separator + nickname);
         this.pw.flush();
@@ -109,7 +111,7 @@ public class Client {
      * @param message the message.
      */
     public void sendCreateMessageRequest(String nickname, String message) {
-        if (!this.isLogged) return;
+        if (!this.isLoggedIn) return;
 
         this.pw.println(Request.CREATE_MSG + this.separator + nickname + this.separator + message);
         this.pw.flush();
@@ -119,7 +121,7 @@ public class Client {
      * Sends the get chat users request to the server.
      */
     public void sendGetChatUsersRequest() {
-        if (!this.isLogged) return;
+        if (!this.isLoggedIn) return;
 
         this.pw.println(Request.GET_CHAT_USERS);
         this.pw.flush();
