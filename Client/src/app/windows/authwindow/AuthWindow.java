@@ -1,17 +1,22 @@
 package app.windows.authwindow;
 
 //Javax Swing (Part of Java Foundation Classes)
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import javax.swing.WindowConstants;
 
 //Java Abstract Window Toolkit
-import java.awt.*;
-
-//Java Language (Fundamental Classes)
+import java.awt.Font;
 
 //Java Custom Packages
 import app.api.Client;
-import app.windows.authwindow.actionlistener.AL_LogInBtn;
-import app.windows.authwindow.actionlistener.AL_SignUpBtn;
+import app.windows.authwindow.actionlisteners.AL_LogInBtn;
+import app.windows.authwindow.actionlisteners.AL_SignUpBtn;
+
 
 public class AuthWindow {
     //The GUI components:
@@ -83,7 +88,7 @@ public class AuthWindow {
         this.logInButton = new JButton("Log in");
         this.logInButton.setBounds(102, 345, 200, 40);
         this.logInButton.setFont(new Font("", Font.PLAIN, 19));
-        this.logInButton.addActionListener(new AL_LogInBtn());
+        this.logInButton.addActionListener(new AL_LogInBtn(this.nicknameTextField, this.passwordField, this.mainFrame, this.client));
         this.mainFrame.add(this.logInButton);
 
         //Initializing the south part.

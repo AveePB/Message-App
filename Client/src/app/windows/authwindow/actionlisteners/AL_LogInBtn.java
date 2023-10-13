@@ -1,13 +1,24 @@
-package app.windows.authwindow.actionlistener;
+package app.windows.authwindow.actionlisteners;
+
+//Java Swing (Part of Java Foundation Classes)
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
 
 //Java Abstract Window Toolkit
-import app.api.Client;
-import app.api.Response;
-
-import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+//Java I/O (Input and Output)
 import java.io.IOException;
+
+//Java Language (Fundamental Classes)
+import java.lang.String;
+
+//Java Custom Packages
+import app.api.Client;
+import app.api.Response;
 
 
 public class AL_LogInBtn implements ActionListener {

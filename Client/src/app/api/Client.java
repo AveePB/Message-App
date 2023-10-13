@@ -1,13 +1,11 @@
-package app.api.client;
+package app.api;
 
 //Java Networking (API)
-import app.api.Request;
-
-import java.io.InputStreamReader;
 import java.net.Socket;
 
 //Java I/O (Input and Output)
 import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -53,6 +51,40 @@ public class Client {
         this.br = new BufferedReader(new InputStreamReader(this.sock.getInputStream()));
         this.pw = new PrintWriter(this.sock.getOutputStream());
     }
+
+    /**
+     * Returns the response from server.
+     * @return the server response
+     */
+    public String[] getResponse() throws IOException {
+        return this.br.readLine().split(this.nickname);
+    }
+
+    /**
+     * Returns the client's nickname.
+     * @return the nickname (String).
+     */
+    public String getNickname() {
+        return this.nickname;
+    }
+
+    /**
+     * Returns the client's password.
+     * @return the password (String).
+     */
+    public String getPassword() {
+        return this.password;
+    }
+
+
+    public void closeConnection() {
+        try {
+            this.br.close();
+            this.pw.close();
+        }
+        catch (IOException ignored) { }
+    }
+
 
     /**
      * Sends the login request to the server.
@@ -126,25 +158,4 @@ public class Client {
         this.pw.println(Request.GET_CHAT_USERS);
         this.pw.flush();
     }
-
-    /**
-     * Returns the client's nickname.
-     * @return the nickname (String).
-     */
-    public String getNickname() {
-        return this.nickname;
-    }
-
-    /**
-     * Returns the client's password.
-     * @return the password (String).
-     */
-    public String getPassword() {
-        return this.password;
-    }
-
-    /*
-        2.CREATE FUNCTION LISTENING FOR RESPONSES.
-        3.CREATE THREAD FUNCTION THAT LISTENS FOR RESPONSES.
-     */
 }

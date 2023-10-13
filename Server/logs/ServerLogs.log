@@ -1,2 +1,517 @@
 [INFO] (Fri Oct 06 18:17:11 CEST 2023) Socket was initialized!
 [INFO] (Fri Oct 06 18:17:11 CEST 2023) Server is running...
+[INFO] (Thu Oct 12 17:41:04 CEST 2023) Socket was initialized!
+[INFO] (Thu Oct 12 17:41:04 CEST 2023) Server is running...
+[INFO] (Thu Oct 12 17:41:08 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:41:12 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:41:12 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:41:14 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:41:17 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:41:17 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:41:20 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:41:25 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:41:25 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:41:39 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:41:47 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:41:47 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:41:49 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:42:18 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:42:18 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:42:18 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:42:20 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:42:20 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:42:30 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:42:32 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:42:32 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:42:39 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:42:44 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:42:44 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:42:59 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:43:04 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:43:04 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:43:17 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:43:20 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:43:20 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:43:27 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:43:35 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:43:35 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:43:36 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:43:43 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:43:43 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:43:46 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:43:51 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:43:51 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:44:04 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:44:05 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:44:05 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:45:48 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:45:53 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:45:53 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:46:40 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:46:48 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:46:48 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:49:08 CEST 2023) Socket was initialized!
+[INFO] (Thu Oct 12 17:49:08 CEST 2023) Server is running...
+[INFO] (Thu Oct 12 17:49:21 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:49:47 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:49:47 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:50:29 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:50:29 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:50:34 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:50:34 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:50:35 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:50:35 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:51:02 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:51:27 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:51:27 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:52:44 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 17:53:12 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 17:53:12 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:10:33 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:10:35 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:10:35 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:11:02 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:11:15 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:11:15 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:11:19 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:11:22 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:11:22 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:13:54 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:13:57 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:13:57 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:14:29 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:14:31 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:14:31 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:14:36 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:14:37 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:14:37 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:14:53 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:14:55 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:14:55 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:15:03 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:15:05 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:15:05 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:15:13 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:15:16 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:15:16 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:15:32 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:15:35 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:15:35 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:15:39 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:15:54 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:15:54 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:16:07 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:16:11 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:16:11 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:17:08 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:17:11 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:17:11 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:17:16 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:17:19 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:17:19 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:17:34 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:17:40 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:17:40 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:17:52 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:17:55 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:17:55 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:18:03 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:18:06 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:18:06 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:18:51 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:18:53 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:18:53 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:19:06 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:19:08 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:19:08 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:20:17 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:20:21 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:20:21 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:20:29 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:20:31 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:20:31 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:20:37 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:20:43 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:20:43 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:21:05 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:21:13 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:21:13 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:22:25 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:22:31 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:22:31 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:22:36 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:22:38 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:22:38 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:22:51 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:23:04 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:23:04 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:23:51 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:24:00 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:24:00 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:25:56 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:26:17 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:26:17 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:26:23 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:26:25 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:26:25 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:26:34 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:26:36 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:26:36 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:26:38 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:26:42 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:26:42 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:26:51 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:26:56 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:26:56 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:27:38 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:27:41 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:27:41 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:27:44 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:27:47 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:27:47 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:27:50 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:27:57 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:27:57 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:29:00 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:29:12 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:29:12 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:29:20 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:29:25 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:29:25 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:29:29 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:29:40 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:29:40 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:29:44 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:29:51 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:29:51 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:29:59 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:03 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:30:03 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:06 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:06 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:08 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:30:08 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:09 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:30:09 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:10 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:26 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:30:26 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:29 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:39 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:30:39 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:42 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:47 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:30:47 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:51 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:30:59 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:30:59 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:31:03 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:31:05 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:31:05 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:31:10 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:31:22 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:31:22 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:32:33 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:32:35 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:32:35 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:32:38 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:32:41 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:32:41 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:34:06 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:34:23 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:34:23 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:35:26 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:35:38 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:35:38 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:35:47 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:36:09 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:36:09 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:36:13 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:36:16 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:36:16 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:36:19 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:36:21 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:36:21 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:36:24 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:36:31 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:36:31 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:36:34 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:36:37 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:36:37 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:36:54 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:37:14 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:37:14 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:39:34 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:39:39 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:39:39 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:39:45 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:40:00 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:40:00 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:40:04 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:40:06 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:40:06 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:40:09 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:40:24 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:40:24 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:40:59 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:41:07 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:41:07 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:41:41 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:41:53 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:41:53 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:43:17 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:43:25 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:43:25 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:44:41 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:45:00 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:45:00 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:46:14 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:46:19 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:46:19 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:46:34 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:46:44 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:46:44 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:46:52 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:47:05 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:47:05 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:47:59 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:48:05 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:48:05 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:48:17 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:48:23 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:48:23 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:49:19 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:49:24 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:49:24 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:49:29 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:49:45 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:49:45 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:51:36 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:51:49 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:51:49 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:51:54 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:51:58 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:51:58 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:54:07 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:54:18 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:54:18 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:56:22 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:56:37 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:56:37 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:56:53 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:57:03 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:57:03 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:57:16 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:57:43 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:57:43 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:57:58 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:58:13 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:58:13 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:59:09 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:59:13 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:59:13 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:59:34 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:59:46 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 18:59:46 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 18:59:53 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:00:16 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 19:00:16 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:00:37 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:00:52 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 19:00:52 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:00:52 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:00:57 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 19:00:57 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:01:44 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:01:55 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 19:01:55 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:03:21 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:04:19 CEST 2023) Socket was initialized!
+[INFO] (Thu Oct 12 19:04:19 CEST 2023) Server is running...
+[INFO] (Thu Oct 12 19:04:21 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:04:53 CEST 2023) Socket was initialized!
+[INFO] (Thu Oct 12 19:04:53 CEST 2023) Server is running...
+[INFO] (Thu Oct 12 19:04:57 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:05:25 CEST 2023) Socket was initialized!
+[INFO] (Thu Oct 12 19:05:25 CEST 2023) Server is running...
+[INFO] (Thu Oct 12 19:05:26 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:06:00 CEST 2023) Socket was initialized!
+[INFO] (Thu Oct 12 19:06:00 CEST 2023) Server is running...
+[INFO] (Thu Oct 12 19:06:01 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:07:02 CEST 2023) Socket was initialized!
+[INFO] (Thu Oct 12 19:07:02 CEST 2023) Server is running...
+[INFO] (Thu Oct 12 19:07:04 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:08:42 CEST 2023) Socket was initialized!
+[INFO] (Thu Oct 12 19:08:42 CEST 2023) Server is running...
+[INFO] (Thu Oct 12 19:08:45 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:09:05 CEST 2023) Socket was initialized!
+[INFO] (Thu Oct 12 19:09:05 CEST 2023) Server is running...
+[INFO] (Thu Oct 12 19:09:06 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:09:07 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:09:07 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:13:21 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:13:22 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:13:22 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:13:30 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:13:30 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:13:30 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:13:37 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:13:37 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:13:37 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:14:17 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:14:29 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 19:14:29 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:14:33 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:14:48 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 19:14:48 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:15:52 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:15:55 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:15:55 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:16:03 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:16:08 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:16:08 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:16:18 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:16:40 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 19:16:40 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:17:31 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:17:34 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:17:34 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:17:52 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:18:16 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 19:18:16 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:18:22 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:18:28 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Thu Oct 12 19:18:28 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:18:54 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:18:56 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:18:56 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:20:15 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:20:17 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:20:17 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:20:32 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:20:32 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:20:32 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:22:56 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:22:56 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:22:56 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:23:08 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:23:08 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:23:08 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:23:19 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Thu Oct 12 19:23:20 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Thu Oct 12 19:23:20 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 08:57:55 CEST 2023) Socket was initialized!
+[INFO] (Fri Oct 13 08:57:55 CEST 2023) Server is running...
+[INFO] (Fri Oct 13 09:00:37 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:00:41 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:00:41 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:08:01 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:08:06 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:08:06 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:11:31 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:11:35 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:11:35 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:11:55 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:11:59 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:11:59 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:12:15 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:12:21 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:12:21 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:12:28 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:12:37 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:12:37 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:15:41 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:15:49 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:15:49 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:19:45 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:19:54 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:19:54 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:19:57 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:19:59 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:19:59 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:36:27 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:36:33 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:36:33 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:36:53 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:36:53 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:38:01 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:38:07 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:38:07 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:38:07 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Fri Oct 13 09:38:07 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:38:53 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:39:08 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:39:08 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:39:08 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Fri Oct 13 09:39:08 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:39:35 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:39:38 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:39:38 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:39:38 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Fri Oct 13 09:39:38 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:39:53 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:40:02 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:40:02 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:40:09 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[WARN] (Fri Oct 13 09:40:09 CEST 2023) 127.0.0.1 has sent invalid request 'REGISTER'!
+[INFO] (Fri Oct 13 09:40:09 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Fri Oct 13 09:40:09 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:40:22 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:40:30 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:40:30 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:40:34 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[WARN] (Fri Oct 13 09:40:34 CEST 2023) 127.0.0.1 has sent invalid request 'REGISTER'!
+[INFO] (Fri Oct 13 09:40:34 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Fri Oct 13 09:40:34 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:40:51 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:41:00 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:41:00 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:41:07 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:41:07 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:41:18 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:41:24 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:41:24 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:41:25 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:41:26 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:41:26 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:41:26 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:41:29 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:41:29 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:41:33 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[WARN] (Fri Oct 13 09:41:33 CEST 2023) 127.0.0.1 has sent invalid request 'REGISTER'!
+[INFO] (Fri Oct 13 09:41:33 CEST 2023) java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "java.io.BufferedReader.readLine()" is null
+[INFO] (Fri Oct 13 09:41:33 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:44:25 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:44:32 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:44:32 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:44:34 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:44:34 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:44:59 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:45:08 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:45:08 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:45:31 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:45:45 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:45:45 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:45:52 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:46:02 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:46:02 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:46:22 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 09:46:40 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 09:46:40 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 09:46:42 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 09:46:42 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 10:14:59 CEST 2023) Socket was initialized!
+[INFO] (Fri Oct 13 10:14:59 CEST 2023) Server is running...
+[INFO] (Fri Oct 13 10:17:14 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 10:18:06 CEST 2023) 127.0.0.1 has sent request 'LOGIN'!
+[INFO] (Fri Oct 13 10:18:06 CEST 2023) LOGIN_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 10:18:08 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 10:18:08 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 10:18:22 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 10:18:25 CEST 2023) 127.0.0.1 has sent request 'LOGIN'!
+[INFO] (Fri Oct 13 10:18:25 CEST 2023) LOGIN_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 10:18:38 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 10:18:38 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 10:19:00 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 10:19:02 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 10:19:02 CEST 2023) Lost Connection with 127.0.0.1!

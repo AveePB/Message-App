@@ -1,4 +1,4 @@
-package app.windows.authwindow.actionlistener;
+package app.windows.authwindow.actionlisteners;
 
 //Java Swing (Part of Java Foundation Classes)
 import javax.swing.JFrame;
@@ -13,9 +13,13 @@ import java.awt.event.ActionListener;
 //Java I/O (Input and Output)
 import java.io.IOException;
 
+//Java Language (Fundamental Classes)
+import java.lang.String;
+
 //Java Custom Packages
 import app.api.Client;
 import app.api.Response;
+
 
 public class AL_SignUpBtn implements ActionListener {
     //GUI components:
