@@ -1,5 +1,8 @@
 package app;
 
+//Java Language (Fundamental Classes)
+import java.lang.String;
+
 public class Settings {
     //API
     public static final String API_SEPARATOR = "_\\+S3WFSDFSFDSFdP\\+_";
