@@ -1,5 +1,8 @@
 package app.api;
 
+//Java Utilities (Popular Classes)
+import java.util.Base64;
+
 //Java Language (Fundamental Classes)
 import java.lang.String;
 
@@ -16,6 +19,16 @@ public enum Request {
 
     Request(String str) {
         this.str = str;
+    }
+
+    /**
+     * Decodes the given string using the base64 key.
+     * @param text the string.
+     * @return the decoded string.
+     */
+    public static String decodeText(String text) {
+        byte[] bytes = Base64.getDecoder().decode(text.getBytes());
+        return new String(bytes);
     }
 
     @Override

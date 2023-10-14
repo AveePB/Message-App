@@ -45,17 +45,6 @@ public class ClientHandler extends Thread {
     }
 
     /**
-     * Sends a response to the client about an invalid request.
-     * @param req the full form request.
-     */
-    private void sendRespondInvalidRequest(String[] req) {
-        //REQ[0] <- Request type
-        this.logger.logWarn(this.ipAddress + " has sent invalid request '" + req[0] + "'!");
-        this.pw.println(Response.INVALID_REQUEST);
-        this.pw.flush();
-    }
-
-    /**
      * Handles requests from the client.
      * @param req the full form request.
      */
@@ -71,11 +60,11 @@ public class ClientHandler extends Thread {
                 this.rh.register(req[1], req[2]);
             }
             else {
-                throw new IOException();
+                throw new IOException("INVALID REQUEST!!!");
             }
         }
         catch (IOException e) {
-            sendRespondInvalidRequest(req);
+            this.rh.sendResponse(Response.INVALID_REQUEST, "");
         }
     }
 
@@ -101,11 +90,11 @@ public class ClientHandler extends Thread {
                 this.rh.getChatUsers();
             }
             else {
-                throw new IOException();
+                throw new IOException("INVALID REQUEST!!!");
             }
         }
         catch (IOException e) {
-            sendRespondInvalidRequest(req);
+            this.rh.sendResponse(Response.INVALID_REQUEST, "");
         }
     }
 
@@ -126,7 +115,7 @@ public class ClientHandler extends Thread {
 
         while (this.running) {
             try {
-                String[] req = this.br.readLine().split(Settings.API_SEPARATOR);
+                String[] req = Request.decodeText(this.br.readLine()).split(Settings.API_SEPARATOR);
                 this.logger.logInfo(this.ipAddress + " has sent request '" + req[0] + "'!");
 
                 if (this.rh.isUserLoggedIn())

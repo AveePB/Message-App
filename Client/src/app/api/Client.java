@@ -57,7 +57,7 @@ public class Client {
      * @return the server response
      */
     public String[] getResponse() throws IOException {
-        return this.br.readLine().split(this.nickname);
+        return Response.decodeText(this.br.readLine()).split(this.nickname);
     }
 
     /**
@@ -94,7 +94,8 @@ public class Client {
     public void sendLoginRequest(String nickname, String password) {
         if (this.isLoggedIn) return;
 
-        this.pw.println(Request.LOGIN + this.separator + nickname + this.separator + password);
+        String request = Request.LOGIN + this.separator + nickname + this.separator + password;
+        this.pw.println(Request.encodeText(request));
         this.pw.flush();
 
         this.nickname = nickname;
@@ -107,7 +108,7 @@ public class Client {
     public void sendLogoutRequest() {
         if (!this.isLoggedIn) return;
 
-        this.pw.println(Request.LOGOUT);
+        this.pw.println(Request.encodeText(Request.LOGOUT.toString()));
         this.pw.flush();
     }
 
@@ -119,7 +120,8 @@ public class Client {
     public void sendRegisterRequest(String nickname, String password) {
         if (this.isLoggedIn) return;
 
-        this.pw.println(Request.REGISTER + this.separator + nickname + this.separator + password);
+        String request = Request.REGISTER + this.separator + nickname + this.separator + password;
+        this.pw.println(Request.encodeText(request));
         this.pw.flush();
 
         this.nickname = nickname;
@@ -133,7 +135,8 @@ public class Client {
     public void sendCreateChatRequest(String nickname) {
         if (!this.isLoggedIn) return;
 
-        this.pw.println(Request.CREATE_CHAT + this.separator + nickname);
+        String request = Request.CREATE_CHAT + this.separator + nickname;
+        this.pw.println(Request.encodeText(request));
         this.pw.flush();
     }
 
@@ -145,7 +148,8 @@ public class Client {
     public void sendCreateMessageRequest(String nickname, String message) {
         if (!this.isLoggedIn) return;
 
-        this.pw.println(Request.CREATE_MSG + this.separator + nickname + this.separator + message);
+        String request = Request.CREATE_MSG + this.separator + nickname + this.separator + message;
+        this.pw.println(Request.encodeText(request));
         this.pw.flush();
     }
 
@@ -155,7 +159,7 @@ public class Client {
     public void sendGetChatUsersRequest() {
         if (!this.isLoggedIn) return;
 
-        this.pw.println(Request.GET_CHAT_USERS);
+        this.pw.println(Request.encodeText(Request.GET_CHAT_USERS.toString()));
         this.pw.flush();
     }
 }
