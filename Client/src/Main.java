@@ -1,8 +1,12 @@
+//Javax Swing (Part of Java Foundation Classes)
+import javax.swing.JOptionPane;
+
 //Java I/O (Input and Output)
 import java.io.IOException;
 
 //Java Custom Packages
 import app.App;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -10,12 +14,8 @@ public class Main {
             App app = new App();
             app.run();
         }
-        catch (IOException ignored) { }
-        /*
-         * 1.Create design of MainWindow class.
-         * 1.1 Add Base64 ENCODING TO CONNECTIONS!!!
-         * 2.Create MainWindow class.
-         * 3.Create MainWindow action listeners.
-         */
+        catch (IOException ex) {
+            JOptionPane.showMessageDialog(null, "Server is offline!", "Message App Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 }

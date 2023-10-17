@@ -4,9 +4,11 @@ package app.api;
 import java.io.PrintWriter;
 
 //Java Language (Fundamental Classes)
+import java.lang.StringBuilder;
 import java.lang.String;
 
 //Java Custom Packages
+import app.Settings;
 import app.db.Database;
 import app.db.User;
 import app.log.Logger;
@@ -107,12 +109,16 @@ public class RequestHandler {
             User user2 = this.db.getUser(nickname);
             int ans = this.db.createChat(this.user.getId(), user2.getId());
 
-            if (ans == 1)
-                sendResponse(Response.CHAT_CREATION_SUCCESS, "");
-            else if (ans == 0)
+            if (ans == 1) {
+                sendResponse(Response.CHAT_CREATION_SUCCESS, (Settings.API_SEPARATOR + nickname));
+                this.db.sendNewChatNotification(user2.getId(), this.user.getNickname());
+            }
+            else if (ans == 0) {
                 sendResponse(Response.CHAT_CREATION_STOPPED, "");
-            else
+            }
+            else {
                 throw new Exception();
+            }
         }
         catch (Exception e) {
             sendResponse(Response.CHAT_CREATION_FAILED, "");
@@ -130,7 +136,7 @@ public class RequestHandler {
             if (this.db.createMessage(this.user.getId(), recipient.getId(), msgContent)) {
                 this.db.sendMessage(recipient.getId(),  this.user.getNickname(), msgContent);
 
-                sendResponse(Response.MSG_CREATION_SUCCESS, "");
+                sendResponse(Response.MSG_CREATION_SUCCESS, (Settings.API_SEPARATOR + msgContent));
             }
             else {
                 throw new Exception();
@@ -146,10 +152,33 @@ public class RequestHandler {
      */
     protected void getChatUsers() {
         try {
-            sendResponse(Response.CHAT_USERS, this.db.getChatUsers(this.user.getId()));
+            StringBuilder args = new StringBuilder();
+            for (String nickname: this.db.getChatUsers(this.user.getId()))
+                args.append(Settings.API_SEPARATOR).append(nickname);
+
+            sendResponse(Response.CHAT_USERS, args.toString());
         }
         catch (Exception e) {
             sendResponse(Response.CHAT_USERS, "");
+        }
+    }
+
+    /**
+     * Handles READ_CHAT_MESSAGES request.
+     * @param nickname
+     */
+    protected void readChatMessages(String nickname) {
+        try {
+            User secondUser = this.db.getUser(nickname);
+            StringBuilder args = new StringBuilder();
+
+            for (String msg: this.db.getMessages(this.user, secondUser))
+                args.append(Settings.API_SEPARATOR).append(msg);
+
+            sendResponse(Response.CHAT_MESSAGES, args.toString());
+        }
+        catch (Exception e) {
+            sendResponse(Response.CHAT_MESSAGES, "");
         }
     }
 }
