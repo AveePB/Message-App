@@ -15,7 +15,7 @@ import java.lang.String;
 
 public class Client {
     //API
-    public static final String API_SEPARATOR = "_+S3WFSDFSFDSFdP+_";
+    public static final String API_SEPARATOR = "_S3WFSDFSFDSFdP_";
     public static final String API_SERVER_IP_ADDRESS = "localhost";
     public static final int API_SERVER_PORT = 55555;
 
@@ -57,7 +57,7 @@ public class Client {
      * @return the server response
      */
     public String[] getResponse() throws IOException {
-        return Response.decodeText(this.br.readLine()).split(this.nickname);
+        return Response.decodeText(this.br.readLine()).split(this.separator);
     }
 
     /**
@@ -76,6 +76,12 @@ public class Client {
         return this.password;
     }
 
+    /**
+     * Sets the client status to online.
+     */
+    public void setStatusOnline() {
+        this.isLoggedIn = true;
+    }
 
     public void closeConnection() {
         try {
@@ -160,6 +166,18 @@ public class Client {
         if (!this.isLoggedIn) return;
 
         this.pw.println(Request.encodeText(Request.GET_CHAT_USERS.toString()));
+        this.pw.flush();
+    }
+
+    /**
+     * Sends the read chat message request to the server.
+     * @param nickname the user nickname.
+     */
+    public void sendReadChatMessagesRequest(String nickname) {
+        if (!this.isLoggedIn) return;
+
+        String request = Request.READ_CHAT_MESSAGES + this.separator + nickname;
+        this.pw.println(Request.encodeText(request));
         this.pw.flush();
     }
 }

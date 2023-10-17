@@ -26,7 +26,7 @@ public class AL_SignUpBtn implements ActionListener {
     //GUI components:
     JTextField nicknameTextField;
     JPasswordField passwordField;
-    JFrame frame;
+    JFrame mainFrame;
 
     //The application API:
     Client client;
@@ -35,13 +35,13 @@ public class AL_SignUpBtn implements ActionListener {
      * Constructs an action listener 'sign up' button object.
      * @param nicknameTextField the nickname text field.
      * @param passwordField the password text field.
-     * @param frame the frame.
+     * @param mainFrame the main frame.
      * @param client the application API.
      */
-    public AL_SignUpBtn(JTextField nicknameTextField, JPasswordField passwordField, JFrame frame, Client client) {
+    public AL_SignUpBtn(JTextField nicknameTextField, JPasswordField passwordField, JFrame mainFrame, Client client) {
         this.nicknameTextField = nicknameTextField;
         this.passwordField = passwordField;
-        this.frame = frame;
+        this.mainFrame = mainFrame;
 
         this.client = client;
     }
@@ -53,7 +53,7 @@ public class AL_SignUpBtn implements ActionListener {
 
         //Checking if fields are empty.
         if (nickname.isEmpty() || password.isEmpty()) {
-            JOptionPane.showMessageDialog(this.frame, "One of the fields is empty!!!", "INFO", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this.mainFrame, "One of the fields is empty!!!", "INFO", JOptionPane.INFORMATION_MESSAGE);
             return;
         }
 
@@ -65,11 +65,12 @@ public class AL_SignUpBtn implements ActionListener {
             String[] response = this.client.getResponse();
 
             if ((response.length == 1) && (response[0].equals(Response.REGISTER_SUCCESS.toString()))) {
+                this.client.setStatusOnline();
                 new MainWindow(this.client).open();
-                this.frame.dispose();
+                this.mainFrame.dispose();
             }
             else if ((response.length == 1) && (response[0].equals(Response.REGISTER_FAILED.toString()))) {
-                JOptionPane.showMessageDialog(this.frame, "This nickname is already taken!!!", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(this.mainFrame, "This nickname is already taken!!!", "INFO", JOptionPane.INFORMATION_MESSAGE);
             }
             else {
                 System.out.println(response[0]);
@@ -77,7 +78,8 @@ public class AL_SignUpBtn implements ActionListener {
             }
         }
         catch (IOException ex) {
-            this.frame.dispose();
+            JOptionPane.showMessageDialog(null, "Server is offline!", "Message App Error", JOptionPane.ERROR_MESSAGE);
+            this.mainFrame.dispose();
             this.client.closeConnection();
         }
     }

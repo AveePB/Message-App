@@ -14,15 +14,18 @@
       <change beforePath="$PROJECT_DIR$/../Client/src/app/api/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/api/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/app/api/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/api/Request.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/app/api/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/api/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/app/windows/authwindow/actionlisteners/AL_LogInBtn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/windows/authwindow/actionlisteners/AL_LogInBtn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/app/windows/authwindow/actionlisteners/AL_SignUpBtn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/windows/authwindow/actionlisteners/AL_SignUpBtn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/app/windows/mainwindow/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/windows/mainwindow/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Server.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/ServerLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ServerLogs.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Settings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/api/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/api/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/Request.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/api/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/RequestHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/api/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/db/Database.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,17 +50,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "cli__app",
-    "last_opened_file_path": "C:/Users/Work/Desktop/MessageAppJava/Client",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;cli__app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Work/Desktop/MessageAppJava/Server&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />

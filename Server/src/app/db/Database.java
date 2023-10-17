@@ -11,7 +11,9 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 
 //Java Utilities (Popular Classes)
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 //Java Language (Fundamental Classes)
@@ -181,8 +183,7 @@ public class Database {
      * @param userId the user's id.
      * @return a list of nicknames.
      */
-    public String getChatUsers(int userId) {
-        StringBuilder nicknames = new StringBuilder();
+    public List<String> getChatUsers(int userId) {
 
         //userId can be found on both fields user1_id & user2_id
         String sqlStmt1 = "SELECT user.nickname AS nickname FROM chat ";
@@ -193,23 +194,25 @@ public class Database {
         sqlStmt2 = sqlStmt2 + "JOIN user ON chat.user1_id = user.id ";
         sqlStmt2 = sqlStmt2 + "WHERE chat.user2_id = " + userId + ';';
 
+        List<String> nicknames = new ArrayList<>();
+
         try {
             Statement stmt = this.conn.createStatement();
             ResultSet rs;
 
             rs = stmt.executeQuery(sqlStmt1);
             while (rs.next()) {
-                nicknames.append('.').append(rs.getString("nickname"));
+                nicknames.add(rs.getString("nickname"));
             }
 
             rs = stmt.executeQuery(sqlStmt2);
             while (rs.next()) {
-                nicknames.append('.').append(rs.getString("nickname"));
+                nicknames.add(rs.getString("nickname"));
             }
         }
         catch (SQLException ignored) { }
 
-        return nicknames.toString();
+        return nicknames;
     }
 
     /**
@@ -282,14 +285,64 @@ public class Database {
     /**
      * Sends message to recipient if he is online.
      * @param recipientId the recipient's id.
-     * @param authorEmail the author's email.
+     * @param authorNickname the author's nickname.
      * @param msgContent the message content.
      */
-    public void sendMessage(int recipientId, String authorEmail,  String msgContent) {
+    public void sendMessage(int recipientId, String authorNickname, String msgContent) {
         PrintWriter recipientPw = this.activeUsers.get(recipientId);
         if (recipientPw == null) return;
 
-        recipientPw.println(Response.NEW_MSG + Settings.API_SEPARATOR + authorEmail + Settings.API_SEPARATOR + msgContent);
+        recipientPw.println(Response.encodeText(Response.NEW_MSG + Settings.API_SEPARATOR + authorNickname + Settings.API_SEPARATOR + msgContent));
         recipientPw.flush();
     }
+
+    /**
+     * Sends the new chat notification.
+     * @param recipientId the recipient's id.
+     * @param nickname the nickname.
+     */
+    public void sendNewChatNotification(int recipientId, String nickname) {
+        PrintWriter recipientPw = this.activeUsers.get(recipientId);
+        if (recipientPw == null) return;
+
+        recipientPw.println(Response.encodeText(Response.NEW_CHAT + Settings.API_SEPARATOR + nickname));
+        recipientPw.flush();
+    }
+
+    /**
+     * Returns a list of messages between user1 and user2.
+     * @param user1 the first user;
+     * @param user2 the second user.
+     * @return a list of messages.
+     */
+    public List<String> getMessages(User user1, User user2) {
+        int chatId = getChatId(user1.getId(), user2.getId());
+        List<String> messages = new ArrayList<>();
+
+        String sqlStmt = "SELECT author_id, content FROM Message WHERE ";
+        sqlStmt = sqlStmt + "chat_id = " + chatId + ';';
+
+        try {
+            if (chatId == -1) throw new SQLException("THERE IS NO CHAT!!!");
+
+            Statement stmt = this.conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sqlStmt);
+
+            while (rs.next()) {
+                StringBuilder msg = new StringBuilder();
+                if (rs.getInt("author_id") == user1.getId())
+                    msg.append(user1.getNickname());
+                else
+                    msg.append(user2.getNickname());
+
+                msg.append(": ").append(rs.getString("content"));
+                messages.add(msg.toString());
+            }
+        }
+        catch (SQLException ex) {
+            return messages;
+        }
+        return messages;
+    }
+
 }

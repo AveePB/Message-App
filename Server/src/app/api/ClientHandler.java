@@ -89,6 +89,10 @@ public class ClientHandler extends Thread {
             else if ((req.length == 1) && (req[0].equals(Request.GET_CHAT_USERS.toString()))) {
                 this.rh.getChatUsers();
             }
+            else if ((req.length == 2) && (req[0].equals(Request.READ_CHAT_MESSAGES.toString()))) {
+                //REQ[1] <- nickname
+                this.rh.readChatMessages(req[1]);
+            }
             else {
                 throw new IOException("INVALID REQUEST!!!");
             }

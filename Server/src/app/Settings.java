@@ -6,7 +6,7 @@ import java.lang.String;
 
 public class Settings {
     //API
-    public static final String API_SEPARATOR = "_\\+S3WFSDFSFDSFdP\\+_";
+    public static final String API_SEPARATOR = "_S3WFSDFSFDSFdP_";
     public static final int API_PORT = 55555;
 
     //LOG
