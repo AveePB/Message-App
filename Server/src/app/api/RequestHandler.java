@@ -36,13 +36,14 @@ public class RequestHandler {
     }
 
     /**
-     * Sends response to client.
+     * Sends an encoded response to client.
      * @param rep the request type.
      * @param args additional compressed arguments.
      */
-    private void sendResponse(Response rep, String args) {
+    public void sendResponse(Response rep, String args) {
         this.logger.logInfo(rep + args + " sent to " + this.ipAddress);
-        this.pw.println(rep + args);
+
+        this.pw.println(Response.encodeText(rep+args));
         this.pw.flush();
     }
 

@@ -1,5 +1,8 @@
 package app.api;
 
+//Java Utilities (Popular Classes)
+import java.util.Base64;
+
 //Java Language (Fundamental Classes)
 import java.lang.String;
 
@@ -34,6 +37,16 @@ public enum Response {
 
     Response(String str) {
         this.str = str;
+    }
+
+    /**
+     * Encodes the given string using the base64 key.
+     * @param text the string.
+     * @return the encoded string.
+     */
+    public static String encodeText(String text) {
+        byte[] bytes = Base64.getEncoder().encode(text.getBytes());
+        return new String(bytes);
     }
 
     @Override

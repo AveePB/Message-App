@@ -20,18 +20,18 @@ import app.windows.authwindow.actionlisteners.AL_SignUpBtn;
 
 public class AuthWindow {
     //The GUI components:
-    JButton logInButton;
-    JButton signUpButton;
-    JFrame mainFrame;
-    JLabel logo;
-    JTextField nicknameTextField;
-    JPasswordField passwordField;
+    private JButton logInButton;
+    private JButton signUpButton;
+    private JFrame mainFrame;
+    private JLabel logo;
+    private JTextField nicknameTextField;
+    private JPasswordField passwordField;
 
-    //The Form API:
+    //The application API:
     private Client client;
 
     /**
-     * Constructs a login form object.
+     * Constructs an auth window object.
      * @param client the application API object.
      */
     public AuthWindow(Client client) {
@@ -50,12 +50,12 @@ public class AuthWindow {
         this.mainFrame.setResizable(false);
 
         this.mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.mainFrame.setIconImage(new ImageIcon("./assets/icon.png").getImage());
+        this.mainFrame.setIconImage(new ImageIcon("./assets/img/icon.png").getImage());
         this.mainFrame.setTitle("Message App");
 
         //Initializing the north part.
         this.logo = new JLabel();
-        this.logo.setIcon(new ImageIcon("./assets/logo.png"));
+        this.logo.setIcon(new ImageIcon("./assets/img/logo.png"));
         this.logo.setBounds(125, 10, 150, 160);
 
         this.mainFrame.add(this.logo);

@@ -2,6 +2,7 @@ package app.api;
 
 //Java Language (Fundamental Classes)
 import java.lang.String;
+import java.util.Base64;
 
 
 public enum Response {
@@ -34,6 +35,16 @@ public enum Response {
 
     Response(String str) {
         this.str = str;
+    }
+
+    /**
+     * Decodes the given string using the base64 key.
+     * @param text the string.
+     * @return the decoded string.
+     */
+    public static String decodeText(String text) {
+        byte[] bytes = Base64.getDecoder().decode(text.getBytes());
+        return new String(bytes);
     }
 
     @Override

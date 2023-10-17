@@ -8,3 +8,454 @@
 [INFO] (Fri Oct 13 11:05:07 CEST 2023) Server is running...
 [INFO] (Fri Oct 13 11:08:42 CEST 2023) Socket was initialized!
 [INFO] (Fri Oct 13 11:08:42 CEST 2023) Server is running...
+[INFO] (Fri Oct 13 11:14:56 CEST 2023) Socket was initialized!
+[INFO] (Fri Oct 13 11:14:56 CEST 2023) Server is running...
+[INFO] (Fri Oct 13 11:17:01 CEST 2023) Socket was initialized!
+[INFO] (Fri Oct 13 11:17:01 CEST 2023) Server is running...
+[INFO] (Fri Oct 13 11:17:05 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 11:17:18 CEST 2023) 127.0.0.1 has sent request 'LOGIN'!
+[INFO] (Fri Oct 13 11:17:18 CEST 2023) LOGIN_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 11:17:30 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 11:17:30 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 11:17:32 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 11:17:32 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 11:19:46 CEST 2023) Socket was initialized!
+[INFO] (Fri Oct 13 11:19:46 CEST 2023) Server is running...
+[INFO] (Fri Oct 13 11:19:48 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 11:19:50 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 11:19:50 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 11:19:54 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 11:19:59 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 11:19:59 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:26:30 CEST 2023) Socket was initialized!
+[INFO] (Fri Oct 13 15:26:30 CEST 2023) Server is running...
+[INFO] (Fri Oct 13 15:38:36 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:38:42 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:38:42 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:38:45 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:38:45 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:38:56 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:38:56 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:42:21 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:42:31 CEST 2023) 127.0.0.1 has sent request 'LOGIN'!
+[INFO] (Fri Oct 13 15:42:31 CEST 2023) LOGIN_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:42:34 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:42:34 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:42:38 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:42:38 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:42:49 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:42:53 CEST 2023) 127.0.0.1 has sent request 'LOGIN'!
+[INFO] (Fri Oct 13 15:42:53 CEST 2023) LOGIN_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:42:55 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:42:55 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:43:03 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:43:03 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:43:19 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:43:34 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:43:34 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:43:46 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:43:46 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:43:54 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:44:08 CEST 2023) 127.0.0.1 has sent request 'LOGIN'!
+[INFO] (Fri Oct 13 15:44:08 CEST 2023) LOGIN_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:44:10 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:44:10 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:44:15 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:44:15 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:48:31 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:48:35 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:48:35 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:48:49 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:48:49 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:48:54 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:49:01 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:49:01 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:49:10 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:49:10 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:52:46 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:52:50 CEST 2023) 127.0.0.1 has sent request 'LOGIN'!
+[INFO] (Fri Oct 13 15:52:50 CEST 2023) LOGIN_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:52:52 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:52:52 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:53:01 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:53:01 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:53:07 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:53:10 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:53:10 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:53:20 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:53:20 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:55:26 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:55:29 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:55:29 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:55:48 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:55:48 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:55:55 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:55:58 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:55:58 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:56:11 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:56:11 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:56:37 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:56:40 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:56:40 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:56:45 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:56:45 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:56:49 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:56:52 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:56:52 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:56:59 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:56:59 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:57:09 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:57:14 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:57:14 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:57:17 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:57:17 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:57:19 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:57:19 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:57:23 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:57:23 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:57:25 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:57:25 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:57:26 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:57:31 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:57:31 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:57:35 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:57:35 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:57:43 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:57:43 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 15:59:09 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 15:59:09 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:59:28 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 15:59:34 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 15:59:34 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:05:31 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:05:31 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:05:32 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:05:39 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:05:39 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:07:16 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:07:16 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:07:19 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:07:23 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:07:23 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:07:30 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:07:30 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:07:49 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:07:54 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:07:54 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:08:15 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:08:15 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:08:57 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:09:03 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:09:03 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:09:16 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:09:16 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:14:34 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:14:40 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:14:40 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:15:17 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:15:17 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:15:32 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:15:40 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:15:40 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:16:57 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:16:57 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:18:12 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:18:17 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:18:17 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:19:01 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:19:01 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:19:38 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:19:43 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:19:43 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:19:56 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:19:56 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:20:04 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:20:09 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:20:09 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:20:16 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:20:16 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:20:25 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:20:30 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:20:30 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:20:46 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:20:46 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:21:00 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:21:03 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:21:03 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:22:21 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:22:21 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:23:07 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:23:12 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:23:12 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:23:23 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:23:23 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:23:40 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:23:43 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:23:43 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:24:39 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:24:39 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:28:29 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:28:33 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:28:33 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:28:45 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:28:45 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:28:51 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:28:55 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:28:55 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:31:52 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:31:52 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:31:53 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:31:57 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:31:57 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:32:11 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:32:11 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:32:25 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:32:28 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:32:28 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:32:33 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:32:33 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:34:06 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:34:11 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:34:11 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:34:19 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:34:19 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:34:22 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:34:29 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:34:29 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:34:41 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:34:41 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:34:58 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:35:05 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:35:05 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:35:16 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:35:16 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:35:20 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:35:23 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:35:23 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:35:34 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:35:34 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:35:38 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:35:40 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:35:40 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:35:41 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:35:44 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:35:44 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:35:52 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:35:52 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:36:07 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:36:12 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:36:12 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:37:03 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:37:03 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:37:15 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:37:18 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:37:18 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:37:24 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:37:24 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:38:01 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:38:06 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:38:06 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:38:25 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:38:25 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:39:06 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:39:11 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:39:11 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:39:22 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:39:22 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:39:33 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:39:35 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:39:35 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:40:10 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:40:10 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:40:21 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:40:26 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:40:26 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:40:37 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:40:37 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:43:11 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:43:16 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:43:16 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:44:14 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:44:14 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:44:46 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:44:50 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:44:50 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:45:37 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:45:37 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:53:13 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:53:17 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:53:17 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:53:53 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:53:53 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:56:13 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Fri Oct 13 16:56:17 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Fri Oct 13 16:56:17 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Fri Oct 13 16:57:29 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Fri Oct 13 16:57:29 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:03:56 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 14:03:56 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 14:09:48 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 14:09:48 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 14:22:23 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 14:22:23 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 14:24:24 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 14:24:24 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 14:27:35 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 14:27:35 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 14:28:37 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 14:28:37 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 14:28:45 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:28:49 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:28:49 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:29:15 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:29:15 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:38:57 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 14:38:57 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 14:39:37 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 14:39:37 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 14:39:43 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:39:49 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:39:49 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:39:52 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:39:52 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:41:40 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 14:41:40 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 14:44:18 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:44:22 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:44:22 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:44:31 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:44:31 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:44:39 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:44:44 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:44:44 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:45:38 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:45:38 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:45:46 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:45:50 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:45:50 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:46:00 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:46:00 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:46:04 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:46:08 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:46:08 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:46:16 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:46:16 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:46:20 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:46:23 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:46:23 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:46:30 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:46:30 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:46:34 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:46:39 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:46:39 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:46:59 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:46:59 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:49:39 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:49:42 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:49:42 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:49:46 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:49:46 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:52:27 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:52:32 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:52:32 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:52:57 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:52:57 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:53:15 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:53:20 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:53:20 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:54:38 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:54:38 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:56:08 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:56:12 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:56:12 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:56:46 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:56:46 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:56:52 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 14:56:56 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 14:56:56 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 14:57:00 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 14:57:00 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:00:08 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:00:15 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 15:00:15 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 15:00:39 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 15:00:39 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:01:27 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:01:32 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 15:01:32 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 15:01:44 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 15:01:44 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:06:23 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:06:27 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 15:06:27 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 15:06:44 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 15:06:44 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:06:52 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:06:55 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 15:06:55 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 15:07:01 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 15:07:01 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:07:08 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:07:12 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 15:07:12 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 15:07:53 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 15:07:53 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:09:36 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:09:40 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 15:09:40 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 15:10:09 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 15:10:09 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:14:04 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:14:08 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 15:14:08 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 15:14:51 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 15:14:51 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:19:32 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:19:38 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 15:19:38 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 15:19:47 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 15:19:47 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:22:15 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 15:22:21 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 15:22:21 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 15:22:37 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 15:22:37 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 16:01:21 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 16:01:25 CEST 2023) 127.0.0.1 has sent request 'UkVHSVNURVJfK1MzV0ZTREZTRkRTRmRQK19mZHNhc2ZfK1MzV0ZTREZTRkRTRmRQK18zYTRmc2Rz'!
+[INFO] (Sat Oct 14 16:01:25 CEST 2023) INVALID_REQUEST sent to 127.0.0.1
+[INFO] (Sat Oct 14 16:02:11 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 16:02:11 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 16:03:57 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 16:03:57 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 16:04:52 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 16:04:52 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 16:08:21 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 16:08:21 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 16:08:41 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 16:08:46 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 16:08:46 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 16:09:00 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 16:09:00 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 16:09:02 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 16:09:08 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 16:09:08 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 16:09:10 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 16:09:10 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 16:09:11 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 16:09:16 CEST 2023) 127.0.0.1 has sent request 'LOGIN'!
+[INFO] (Sat Oct 14 16:09:16 CEST 2023) LOGIN_FAILED sent to 127.0.0.1
+[INFO] (Sat Oct 14 16:09:20 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 16:09:20 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Sat Oct 14 16:09:22 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 16:09:22 CEST 2023) REGISTER_FAILED sent to 127.0.0.1
+[INFO] (Sat Oct 14 16:09:25 CEST 2023) 127.0.0.1 has sent request 'LOGIN'!
+[INFO] (Sat Oct 14 16:09:25 CEST 2023) LOGIN_FAILED sent to 127.0.0.1
+[INFO] (Sat Oct 14 16:09:28 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 16:09:28 CEST 2023) Lost Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 16:12:14 CEST 2023) Socket was initialized!
+[INFO] (Sat Oct 14 16:12:14 CEST 2023) Server is running...
+[INFO] (Sat Oct 14 16:12:16 CEST 2023) New Connection with 127.0.0.1!
+[INFO] (Sat Oct 14 16:12:23 CEST 2023) 127.0.0.1 has sent request 'REGISTER'!
+[INFO] (Sat Oct 14 16:12:23 CEST 2023) REGISTER_SUCCESS sent to 127.0.0.1
+[INFO] (Sat Oct 14 16:12:48 CEST 2023) java.net.SocketException: Connection reset
+[INFO] (Sat Oct 14 16:12:48 CEST 2023) Lost Connection with 127.0.0.1!
