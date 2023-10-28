@@ -1,5 +1,6 @@
-# Message-App
+# Message App (Socket Programming Project in Java)
 
+<<<<<<< HEAD
 Title:
 Message App (Socket Programming Project in Java)
 
@@ -17,10 +18,28 @@ Server Configuration:
 
 Client Configuration:
 
+=======
+## Description
+Welcome to the "Message App" project! This is an application that allows users 
+to communicate with each other in real time. This project is developed to learn 
+more about designing and creating more engaging applications.
 
-First run:
-1. Configure client and server, then generate two JAR files of each application and
-move them to the root directory.
-2. Start the server using the Server/run.bat.
-3. Run the client app by JAR file.
-4. Enjoy using the app. 
+## Server Configuration
+The server application has the configuration file (.\Server\src\main\java\app\Config.java).
+It is used to change the most important server parameters.
+
+### API Configuration
+It is requiered to set the server port (default: 55555).
+
+### Database Configuration
+...
+>>>>>>> ddc0e15b7afddba1f2477b923b4fa1be3f146988
+
+### Logger Configuration
+...
+
+## Client Configuration
+...
+
+## Usage
+...
