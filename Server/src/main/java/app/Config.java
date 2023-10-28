@@ -3,7 +3,6 @@ package app;
 //Java Language
 import java.lang.String;
 
-
 /**
  * The Config class is used to
  * fully configure server settings.
