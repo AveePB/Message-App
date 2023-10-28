@@ -12,6 +12,12 @@ It is used to change the most important server parameters.
 ### API Configuration
 It is requiered to set the server port (default: 55555).
 
+### Database Configuration
+...
+
+### Logger Configuration
+...
+
 ## Client Configuration
 ...
 
