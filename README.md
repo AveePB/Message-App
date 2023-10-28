@@ -8,6 +8,8 @@ more about designing and creating more engaging applications.
 ## Server Configuration
 ...
 
+## Client Configuration
+
 First run:
 1. Configure client and server, then generate two JAR files of each application and
 move them to the root directory.
