@@ -1,8 +1,6 @@
-# Message-App
-
-Title:
-Message App (Socket Programming Project in Java)
-
+# Message App (Socket Programming Project in Java)
+##hi
+###hh
 Description:
 Welcome to the "Message App" project! This is an application that allows users 
 to communicate with each other in real time. This project is developed to learn 
