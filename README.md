@@ -1,13 +1,12 @@
 # Message App (Socket Programming Project in Java)
 
-## hi
-
-### hh
-
-Description:
+## Description:
 Welcome to the "Message App" project! This is an application that allows users 
 to communicate with each other in real time. This project is developed to learn 
 more about designing and creating more engaging applications.
+### hh
+
+
 
 Database Configuration:
 MySQL Community Edition is the freely downloadable version of the world's most 
