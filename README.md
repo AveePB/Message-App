@@ -9,10 +9,5 @@ more about designing and creating more engaging applications.
 ...
 
 ## Client Configuration
+...
 
-First run:
-1. Configure client and server, then generate two JAR files of each application and
-move them to the root directory.
-2. Start the server using the Server/run.bat.
-3. Run the client app by JAR file.
-4. Enjoy using the app. 
