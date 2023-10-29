@@ -6,6 +6,7 @@ import org.json.JSONObject;
 //Java Input & Output
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.PrintWriter;
 
 //Java Utilities
 import java.util.Base64;
@@ -35,8 +36,17 @@ public class Response {
      * @param key the field name.
      * @param value the field value.
      */
-    public void append(String key, Object value) {
-        this.jsonObject.append(key, value);
+    public void put(String key, String value) {
+        this.jsonObject.put(key, value);
+    }
+
+    /**
+     * Appends a new field in the response.
+     * @param key the field name.
+     * @param value the field value.
+     */
+    public void put(String key, int value) {
+        this.jsonObject.put(key, value);
     }
 
     /**
@@ -47,7 +57,9 @@ public class Response {
      */
     public void sendToClient(OutputStream stream) throws IOException {
         byte[] jsonObjBytes = this.jsonObject.toString().getBytes();
-        stream.write(this.encoder.encode(jsonObjBytes));
-        stream.flush();
+        PrintWriter pw = new PrintWriter(stream);
+
+        pw.println(new String(this.encoder.encode(jsonObjBytes)));
+        pw.flush();
     }
 }

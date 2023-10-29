@@ -5,11 +5,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 //Java Input & Output
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 
 //Java Utilities
-import java.util.Arrays;
 import java.util.Base64;
 
 //Java Language
@@ -44,11 +45,11 @@ public class Request {
      * @throws IOException java.io.IOException
      */
     public Request(InputStream stream) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(stream));
         this.decoder = Base64.getDecoder();
 
-        byte[] jsonObjBytes = this.decoder.decode(stream.readAllBytes());
-
-        this.jsonObject = new JSONObject(new StringBuilder(Arrays.toString(jsonObjBytes)));
+        byte[] jsonObjBytes = this.decoder.decode(br.readLine());
+        this.jsonObject = new JSONObject(new String(jsonObjBytes));
     }
 
     /**

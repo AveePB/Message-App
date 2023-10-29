@@ -46,10 +46,12 @@ public class Server {
      */
     public void listen() {
         this.isListening = true;
+        System.out.println("STARTED LISTENING FOR CLIENTS!");
+        
         while (this.isListening) {
             try {
                 Socket clientSock = this.sock.accept();
-                //Client Handler Deamon thread function (clientSock)
+                new ClientHandler(this.activeUsers, clientSock).start();
             }
             catch (Exception ex) {
                 //Logger func
