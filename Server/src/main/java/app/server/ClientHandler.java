@@ -2,6 +2,7 @@ package app.server;
 
 //Java Custom
 import app.api.Request;
+import app.api.UnknownRequest;
 
 //Java Input & Output
 import java.io.OutputStream;
@@ -19,7 +20,7 @@ import java.util.Map;
  */
 public class ClientHandler extends Thread {
     //Variables:
-    private Map<Integer, OutputStream> activeUsers;
+    private RequestHandler requestHandler;
     private Socket sock;
 
     private boolean isListening;
@@ -30,7 +31,7 @@ public class ClientHandler extends Thread {
      * @param sock the client socket.
      */
     public ClientHandler(Map<Integer, OutputStream> activeUsers, Socket sock) {
-        this.activeUsers = activeUsers;
+        this.requestHandler = new RequestHandler(activeUsers, sock);
         this.sock = sock;
         //this.logger = new Logger(Config.ARE_LOGS_APPENDED, Config.LOG_DIR);
 
@@ -47,17 +48,21 @@ public class ClientHandler extends Thread {
                 //Request <- the Base64 encoded String of a JSON object
                 Request request = new Request(this.sock.getInputStream());
 
-                if (request.isDELETE())
-                    System.out.println("DELETE");
-                else if (request.isPATCH())
-                    System.out.println("PATCH");
-                else if (request.isPOST())
-                    System.out.println("POST");
-                else if (request.isGET())
-                    System.out.println("GET");
-                else
-                    System.out.println("UNKNOWN");
-
+                try {
+                    if (request.isDELETE())
+                        this.requestHandler.handleDELETE(request);
+                    else if (request.isPOST())
+                        this.requestHandler.handlePOST(request);
+                    else if (request.isPUT())
+                        this.requestHandler.handlePUT(request);
+                    else if (request.isGET())
+                        this.requestHandler.handleGET(request);
+                    else
+                        throw new UnknownRequest("Unknown Request!");
+                }
+                catch (UnknownRequest ex) {
+                    this.requestHandler.handleUNKNOWN(request);
+                }
             }
             catch (Exception ex) {
                 //logger func

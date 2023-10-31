@@ -29,8 +29,8 @@ public class Request {
      */
     //Constants:
     public static final int DELETE = -11111;
-    public static final int PATCH = -1111;
-    public static final int POST = -111;
+    public static final int POST = -1111;
+    public static final int PUT = -111;
     public static final int GET = -11;
 
     //Variables:
@@ -77,19 +77,19 @@ public class Request {
     }
 
     /**
-     * Function checks if request is the PATCH.
-     * @return true if request satisfies the condition otherwise false.
-     */
-    public boolean isPATCH() {
-        return isRequest(Request.PATCH);
-    }
-
-    /**
      * Function checks if request is the POST.
      * @return true if request satisfies the condition otherwise false.
      */
     public boolean isPOST() {
         return isRequest(Request.POST);
+    }
+
+    /**
+     * Function checks if request is the PATCH.
+     * @return true if request satisfies the condition otherwise false.
+     */
+    public boolean isPUT() {
+        return isRequest(Request.PUT);
     }
 
     /**
@@ -105,7 +105,7 @@ public class Request {
      * @param key the field name.
      * @return true if request satisfies the condition otherwise false.
      */
-    public boolean isField(String key) {
+    public boolean hasKey(String key) {
         return this.jsonObject.has(key);
     }
 
