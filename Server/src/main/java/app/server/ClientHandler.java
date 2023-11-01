@@ -3,6 +3,7 @@ package app.server;
 //Java Custom
 import app.api.Request;
 import app.api.UnknownRequest;
+import app.db.DataBase;
 
 //Java Input & Output
 import java.io.OutputStream;
@@ -29,11 +30,11 @@ public class ClientHandler extends Thread {
      * Constructs a client handler object.
      * @param activeUsers the active users.
      * @param sock the client socket.
+     * @param db the database interface.
      */
-    public ClientHandler(Map<Integer, OutputStream> activeUsers, Socket sock) {
-        this.requestHandler = new RequestHandler(activeUsers, sock);
+    public ClientHandler(Map<Integer, OutputStream> activeUsers, Socket sock, DataBase db) {
+        this.requestHandler = new RequestHandler(activeUsers, sock, db);
         this.sock = sock;
-        //this.logger = new Logger(Config.ARE_LOGS_APPENDED, Config.LOG_DIR);
 
         this.isListening = false;
         this.setDaemon(true);

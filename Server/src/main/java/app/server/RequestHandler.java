@@ -3,6 +3,7 @@ package app.server;
 //Java Custom
 import app.api.Request;
 import app.api.UnknownRequest;
+import app.db.DataBase;
 
 //Java Networking
 import java.io.OutputStream;
@@ -24,15 +25,18 @@ public class RequestHandler {
     private Map<Integer, OutputStream> activeUsers;
     private Integer currentUserId;
     private Socket sock;
+    private DataBase db;
 
     /**
      * Constructs a request handler object.
      * @param activeUsers the active users.
      * @param sock the client socket.
+     * @param db the database interface.
      */
-    public RequestHandler(Map<Integer, OutputStream> activeUsers, Socket sock) {
+    public RequestHandler(Map<Integer, OutputStream> activeUsers, Socket sock, DataBase db) {
         this.activeUsers = activeUsers;
         this.sock = sock;
+        this.db = db;
     }
 
     public void handleUNKNOWN(Request request) {
@@ -55,7 +59,6 @@ public class RequestHandler {
             if ((this.currentUserId == null) && (request.hasKey("newUserNickname") && request.hasKey("newUserPassword"))) {
                 String newUserNickname = request.getString("newUserNickname");
                 String newUserPassword = request.getString("newUserPassword");
-
 
 
                 System.out.println("CLIENT WANTS TO CREATE NEW ACCOUNT!!!");

@@ -2,6 +2,7 @@ package app.server;
 
 //Java Custom
 import app.Config;
+import app.db.DataBase;
 
 //Java Input & Output
 import java.io.IOException;
@@ -12,6 +13,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 //Java Utilities
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,7 +26,7 @@ public class Server {
     //Variables:
     private Map<Integer, OutputStream> activeUsers;
     private ServerSocket sock;
-    //private logger;
+    private DataBase db;
 
     private boolean isListening;
 
@@ -32,11 +34,10 @@ public class Server {
      * Constructs a server object using constants from
      * the config file (Config.java).
      */
-    public Server() throws IOException {
+    public Server() throws IOException, SQLException {
         this.activeUsers = new HashMap<>();
         this.sock = new ServerSocket(Config.PORT);
-
-        //this.logger = new Logger(Config.ARE_LOGS_APPENDED, Config.LOG_DIR);
+        this.db = new DataBase(Config.MYSQL_USERNAME, Config.MYSQL_PASSWORD, Config.MYSQL_DB_URL);
 
         this.isListening = false;
     }
@@ -52,7 +53,7 @@ public class Server {
         while (this.isListening) {
             try {
                 Socket clientSock = this.sock.accept();
-                new ClientHandler(this.activeUsers, clientSock).start();
+                new ClientHandler(this.activeUsers, clientSock, this.db).start();
             }
             catch (Exception ex) {
                 //Logger func
