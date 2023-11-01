@@ -35,6 +35,7 @@ public class Server {
     public Server() throws IOException {
         this.activeUsers = new HashMap<>();
         this.sock = new ServerSocket(Config.PORT);
+
         //this.logger = new Logger(Config.ARE_LOGS_APPENDED, Config.LOG_DIR);
 
         this.isListening = false;
