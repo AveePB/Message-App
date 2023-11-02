@@ -24,14 +24,27 @@ import java.lang.String;
 public class Request {
     /* REQUEST STRUCTURE {
      * int TYPE,
+     * int ACTION,
      * (...)
      * }
      */
     //Constants:
+    //REQUEST TYPES
     public static final int DELETE = -11111;
     public static final int POST = -1111;
     public static final int PUT = -111;
     public static final int GET = -11;
+
+    //ACTION TYPES
+    public static final int LISTING_FRIENDS = -1234; //GET
+    public static final int AUTHENTICATION = -1233; //GET
+    public static final int READING_CHAT = -1232; //GET
+
+    public static final int CHAT_CREATION = -1231; //PUT
+    public static final int REGISTRATION = -1230; //PUT
+    public static final int MSG_CREATION = -1229; //PUT
+
+    public static final int NO_ACTION = 0;
 
     //Variables:
     private Base64.Decoder decoder;
@@ -130,6 +143,20 @@ public class Request {
     }
 
     /**
+     * Returns the static int value.
+     * @return the request action type.
+     */
+    public int getAction() {
+        try {
+            return this.jsonObject.getInt("ACTION");
+        }
+        catch (Exception ignored) { }
+
+        return Request.NO_ACTION;
+    }
+
+
+    /**
      * Returns an int value behind the key.
      * @param key the field name.
      * @return the int value.
@@ -145,5 +172,21 @@ public class Request {
      */
     public String getString(String key) {
         return this.jsonObject.getString(key);
+    }
+
+    /**
+     * Creates response based on the current request.
+     * @return the response object.
+     */
+    public Response createResponse() {
+        Response response = new Response();
+        for (String key: this.jsonObject.keySet()) {
+            Object obj = this.jsonObject.get(key);
+            if (obj instanceof Integer)
+                response.put(key, (Integer) obj);
+            else if (obj instanceof String)
+                response.put(key, (String) obj);
+        }
+        return response;
     }
 }

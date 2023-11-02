@@ -1,18 +1,21 @@
 package app.db;
 
+//Java Custom
+import app.api.APIException;
+import app.api.StatusCode;
+import app.db.tables.ChatTable;
+import app.db.tables.MessageTable;
+import app.db.tables.UserTable;
+
 //Java Structured Query Language
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 //Java Utilities
-import java.util.ArrayList;
 import java.util.List;
 
 //Java Language
-import java.lang.Integer;
 import java.lang.String;
 
 /**
@@ -39,21 +42,13 @@ public class DataBase {
      * @param password the user password.
      * @return true if the user data are valid otherwise false.
      */
-    public boolean isUserDataValid(String nickname, String password) {
-        String sqlStmt = "SELECT * FROM user  WHERE ";
-        sqlStmt = sqlStmt + "nickname = '" + nickname + "' AND ";
-        sqlStmt = sqlStmt + "password = '" + password + "';";
-
+    public boolean validateUserData(String nickname, String password) throws APIException {
         try {
-            Statement stmt = this.conn.createStatement();
-            ResultSet rs = stmt.executeQuery(sqlStmt);
-
-            if (rs.next())
-                return true;
+            return UserTable.validate(this.conn.createStatement(), nickname, password);
         }
-        catch (SQLException ignored) { }
-
-        return false;
+        catch (Exception ex) {
+            throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**
@@ -61,22 +56,13 @@ public class DataBase {
      * @param nickname the user nickname.
      * @return -1 if the user doesn't exist otherwise user id.
      */
-    public Integer getUserId(String nickname) {
-        String sqlStmt = "SELECT * FROM user";
-        sqlStmt = sqlStmt + " WHERE nickname = '" + nickname + "';";
-
-        Integer id = null;
-
+    public int getUserId(String nickname) throws APIException {
         try {
-            Statement stmt = this.conn.createStatement();
-            ResultSet rs = stmt.executeQuery(sqlStmt);
-
-            if (rs.next())
-                id = rs.getInt("id");
+            return UserTable.getId(this.conn.createStatement(), nickname);
         }
-        catch (SQLException ignored) { }
-
-        return id;
+        catch (Exception ex) {
+            throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**
@@ -84,22 +70,13 @@ public class DataBase {
      * @param id the user id.
      * @return null if the user doesn't exist otherwise user nickname.
      */
-    public String getUserNickname(int id) {
-        String sqlStmt = "SELECT * FROM user";
-        sqlStmt = sqlStmt + " WHERE id = '" + id + "';";
-
-        String nickname = null;
-
+    public String getUserNickname(int id) throws APIException {
         try {
-            Statement stmt = this.conn.createStatement();
-            ResultSet rs = stmt.executeQuery(sqlStmt);
-
-            if (rs.next())
-                nickname = rs.getString("nickname");
+            return UserTable.getNickname(this.conn.createStatement(), id);
         }
-        catch (SQLException ignored) { }
-
-        return nickname;
+        catch (Exception ex) {
+            throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**
@@ -108,47 +85,26 @@ public class DataBase {
      * @param user2Id the second user's id.
      * @return -1 if the chat doesn't exist otherwise chat id.
      */
-    public Integer getChatId(int user1Id, int user2Id) {
-        int minId = Math.min(user1Id, user2Id);
-        int maxId = Math.max(user1Id, user2Id);
-
-        String sqlStmt = "SELECT id FROM chat WHERE ";
-        sqlStmt = sqlStmt + "user1_id = " + minId + " AND ";
-        sqlStmt = sqlStmt + "user2_id = " + maxId + ";";
-
-        Integer id = null;
+    public int getChatId(int user1Id, int user2Id) throws APIException {
         try {
-            Statement stmt = this.conn.createStatement();
-            ResultSet rs = stmt.executeQuery(sqlStmt);
-
-            if (rs.next()) {
-                id = rs.getInt(1);
-            }
+            return ChatTable.getId(this.conn.createStatement(), user1Id, user2Id);
         }
-        catch (SQLException ignored) { }
-
-        return id;
+        catch (Exception ex) {
+            throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**
      * Returns the maximum chat id.
      * @return the maximum chat id.
      */
-    public Integer getMaxChatId() {
-        String sqlStmt = "SELECT MAX(id) FROM chat;";
-        Integer maxId = null;
-
-        try  {
-            Statement stmt = this.conn.createStatement();
-            ResultSet rs = stmt.executeQuery(sqlStmt);
-
-            if (rs.next()) {
-                maxId = rs.getInt(1);
-            }
+    public int getMaxChatId() throws APIException {
+        try {
+            return ChatTable.getMaxId(this.conn.createStatement());
         }
-        catch (SQLException ignored) { }
-
-        return maxId;
+        catch (Exception ex) {
+            throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**
@@ -156,35 +112,13 @@ public class DataBase {
      * @param userId the user's id.
      * @return a list of nicknames.
      */
-    public List<String> getChatUsers(int userId) {
-        //userId can be found on both fields user1_id & user2_id
-        String sqlStmt1 = "SELECT user.nickname AS nickname FROM chat ";
-        sqlStmt1 = sqlStmt1 + "JOIN user ON chat.user2_id = user.id ";
-        sqlStmt1 = sqlStmt1 + "WHERE chat.user1_id = " + userId + ';';
-
-        String sqlStmt2 = "SELECT user.nickname AS nickname FROM chat ";
-        sqlStmt2 = sqlStmt2 + "JOIN user ON chat.user1_id = user.id ";
-        sqlStmt2 = sqlStmt2 + "WHERE chat.user2_id = " + userId + ';';
-
-        List<String> nicknames = new ArrayList<>();
-
+    public List<String> getFriendList(int userId) throws APIException {
         try {
-            Statement stmt = this.conn.createStatement();
-            ResultSet rs;
-
-            rs = stmt.executeQuery(sqlStmt1);
-            while (rs.next()) {
-                nicknames.add(rs.getString("nickname"));
-            }
-
-            rs = stmt.executeQuery(sqlStmt2);
-            while (rs.next()) {
-                nicknames.add(rs.getString("nickname"));
-            }
+            return ChatTable.getFriends(this.conn.createStatement(), userId);
         }
-        catch (SQLException ignored) { }
-
-        return nicknames;
+        catch (Exception ex) {
+            throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**
@@ -192,114 +126,36 @@ public class DataBase {
      * @param chatId the chat id.
      * @return a list of messages.
      */
-    public List<String> getMessages(int chatId) {
-        List<String> messages = new ArrayList<>();
-
-        String sqlStmt = "SELECT author_id, content FROM Message WHERE ";
-        sqlStmt = sqlStmt + "chat_id = " + chatId + ';';
-
+    public List<String> getMessages(int chatId) throws APIException {
         try {
-            if (chatId == -1) throw new SQLException("THERE IS NO CHAT!!!");
-
-            Statement stmt = this.conn.createStatement();
-            ResultSet rs = stmt.executeQuery(sqlStmt);
-
-            while (rs.next()) {
-                String msg = getUserNickname(rs.getInt("author_id")) +
-                        ": " + rs.getString("content");
-                messages.add(msg);
-            }
-        }
-        catch (SQLException ex) {
-            return messages;
-        }
-
-        return messages;
-    }
-
-    /**
-     * Registers new user in MySQL database.
-     * @param nickname the user nickname.
-     * @param password the user password.
-     * @return true if a user has been created otherwise false.
-     */
-    public boolean createUser(String nickname, String password) {
-        String sqlStmt = "INSERT INTO user (nickname, password) VALUES";
-        sqlStmt = sqlStmt + "('" + nickname + "','" + password + "');";
-
-        try {
-            Statement stmt = this.conn.createStatement();
-            stmt.executeUpdate(sqlStmt);
+            return MessageTable.getMessages(this.conn.createStatement(), chatId);
         }
         catch (Exception ex) {
-            return false;
+            throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
         }
-
-        return true;
     }
 
     /**
-     * Creates a new chat between two users.
-     * @param user1Id the first user's id.
-     * @param user2Id the second user's id.
-     * @return true if a chat has been created otherwise false.
+     * Registers new user in MySQL database and retrievers it.
+     * @param nickname the user nickname.
+     * @param password the user password.
+     * @return boolean value.
      */
-    public boolean createChat(int user1Id, int user2Id)  {
-        if (user1Id == user2Id) return false;
-
-        int minId = Math.min(user1Id, user2Id);
-        int maxId = Math.max(user1Id, user2Id);
-
-        //SQL statement returning number of existing rows with these requirements.
-        String sqlStmt = "SELECT COUNT(*) FROM chat WHERE ";
-        sqlStmt = sqlStmt + "user1_id = " + minId + " AND ";
-        sqlStmt = sqlStmt + "user2_id = " + maxId + ";";
-
-        //SQL statement inserting new row in table chat.
-        int newChatId = getMaxChatId() + 1;
-        String sqlStmtU = "INSERT INTO chat (id, user1_id, user2_id) VALUES";
-        sqlStmtU = sqlStmtU + '(' + newChatId + ',' + minId + ',' + maxId + ");";
-
+    public boolean createUser(String nickname, String password) throws APIException {
         try {
-            Statement stmt = this.conn.createStatement();
-
-            //1. Checks if chat already exists.
-            ResultSet rs = stmt.executeQuery(sqlStmt);
-            if (rs.next() && rs.getInt(1) != 0)
-                return false;
-
-            //2. Creates chat.
-            stmt.executeUpdate(sqlStmtU);
+            return UserTable.createUser(this.conn.createStatement(), nickname, password);
         }
-        catch (SQLException ex) {
-            return false;
+        catch (Exception ex) {
+            throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
         }
-
-        return true;
     }
 
-    /**
-     * Creates a new message and delivers message to online user.
-     * @param authorId the author's id.
-     * @param recipientId the recipient's id.
-     * @param msgContent the message content.
-     * @return true if a message has been created otherwise false.
-     */
-    public boolean createMessage(int authorId, int recipientId, String msgContent) {
-        int chatId = getChatId(authorId, recipientId);
-        if (chatId == -1) return false;
-
-        String sqlStmt = "INSERT INTO message (chat_id, author_id, content) VALUES";
-        sqlStmt = sqlStmt + '(' + chatId + ',' + authorId + ",'" + msgContent + "');";
-
+    public boolean createChat(int userId1, int userId2) throws APIException {
         try {
-            Statement stmt = this.conn.createStatement();
-            stmt.executeUpdate(sqlStmt);
+            return ChatTable.createChat(this.conn.createStatement(), userId1, userId2);
         }
-        catch (SQLException ex) {
-            return false;
+        catch (Exception ex) {
+            throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
         }
-
-        return true;
     }
 }

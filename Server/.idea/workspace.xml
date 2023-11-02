@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0aaf4f0c-9a06-4584-9ec7-2b3c577f41a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/api/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/api/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/api/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/api/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/db/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/db/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/handlers/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/handlers/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,16 +51,16 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev2",
-    "last_opened_file_path": "C:/Users/Work/Desktop/test01",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Work/Desktop/test01&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />

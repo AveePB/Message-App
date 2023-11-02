@@ -13,6 +13,7 @@ import java.util.Base64;
 
 //Java Language
 import java.lang.String;
+import java.util.List;
 
 /**
  * This class is used as an easy way to create
@@ -47,6 +48,15 @@ public class Response {
      */
     public void put(String key, int value) {
         this.jsonObject.put(key, value);
+    }
+
+    /**
+     * Appends a new field in the response.
+     * @param key the field name.
+     * @param list the field value.
+     */
+    public void put(String key, List<String> list) {
+        this.jsonObject.put(key, list);
     }
 
     /**

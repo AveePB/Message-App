@@ -1,4 +1,4 @@
-package app.server;
+package app.server.handlers;
 
 //Java Custom
 import app.api.APIException;
