@@ -74,7 +74,7 @@ public class RequestHandler {
         //CHAT CREATION <- currentUserNickname, chatMemberNickname.
         else if (request.hasKey("currentUserNickname") && request.hasKey("chatMemberNickname")) {
             if (this.currentUserId == null)
-                throw new APIException(StatusCode.FORBIDDEN);
+                throw new APIException(StatusCode.UNAUTHORIZED);
 
             if (!(request.isValueString("currentUserNickname")) || !(request.isValueString("chatMemberNickname")))
                 throw new APIException(StatusCode.BAD_REQUEST);
@@ -89,7 +89,7 @@ public class RequestHandler {
         //MESSAGE CREATION <- recipientNickname, message, currentUserNickname.
         else if (request.hasKey("recipientNickname") && request.hasKey("message") && request.hasKey("currentUserNickname")) {
             if (this.currentUserId == null)
-                throw new APIException(StatusCode.FORBIDDEN);
+                throw new APIException(StatusCode.UNAUTHORIZED);
 
             if (!(request.isValueString("recipientNickname")) || !(request.isValueString("message")) || !(request.isValueString("currentUserNickname")))
                 throw new APIException(StatusCode.BAD_REQUEST);
@@ -127,7 +127,7 @@ public class RequestHandler {
         //READING CHAT MESSAGES <- currentUserNickname, chatMemberNickname.
         else if (request.hasKey("currentUserNickname") && request.hasKey("chatMemberNickname")) {
             if (this.currentUserId == null)
-                throw new APIException(StatusCode.FORBIDDEN);
+                throw new APIException(StatusCode.UNAUTHORIZED);
 
             if (!request.isValueString("currentUserNickname") && !(request.isValueString("chatMemberNickname")))
                 throw new APIException(StatusCode.BAD_REQUEST);
@@ -142,7 +142,7 @@ public class RequestHandler {
         //GETTING CHAT LIST <- currentUserNickname.
         else if (request.hasKey("currentUserNickname")) {
             if (this.currentUserId == null)
-                throw new APIException(StatusCode.FORBIDDEN);
+                throw new APIException(StatusCode.UNAUTHORIZED);
 
             if (!request.isValueString("currentUserNickname"))
                 throw new APIException(StatusCode.BAD_REQUEST);
