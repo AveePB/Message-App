@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //Java Language
+import java.lang.Integer;
 import java.lang.String;
 
 /**
@@ -33,15 +34,38 @@ public class DataBase {
     }
 
     /**
+     * Validates the user data.
+     * @param nickname the user nickname.
+     * @param password the user password.
+     * @return true if the user data are valid otherwise false.
+     */
+    public boolean isUserDataValid(String nickname, String password) {
+        String sqlStmt = "SELECT * FROM user  WHERE ";
+        sqlStmt = sqlStmt + "nickname = '" + nickname + "' AND ";
+        sqlStmt = sqlStmt + "password = '" + password + "';";
+
+        try {
+            Statement stmt = this.conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sqlStmt);
+
+            if (rs.next())
+                return true;
+        }
+        catch (SQLException ignored) { }
+
+        return false;
+    }
+
+    /**
      * Returns user id based on the nickname.
      * @param nickname the user nickname.
      * @return -1 if the user doesn't exist otherwise user id.
      */
-    public int getUserId(String nickname) {
+    public Integer getUserId(String nickname) {
         String sqlStmt = "SELECT * FROM user";
         sqlStmt = sqlStmt + " WHERE nickname = '" + nickname + "';";
 
-        int id = -1;
+        Integer id = null;
 
         try {
             Statement stmt = this.conn.createStatement();
@@ -84,7 +108,7 @@ public class DataBase {
      * @param user2Id the second user's id.
      * @return -1 if the chat doesn't exist otherwise chat id.
      */
-    public int getChatId(int user1Id, int user2Id) {
+    public Integer getChatId(int user1Id, int user2Id) {
         int minId = Math.min(user1Id, user2Id);
         int maxId = Math.max(user1Id, user2Id);
 
@@ -92,7 +116,7 @@ public class DataBase {
         sqlStmt = sqlStmt + "user1_id = " + minId + " AND ";
         sqlStmt = sqlStmt + "user2_id = " + maxId + ";";
 
-        int id = -1;
+        Integer id = null;
         try {
             Statement stmt = this.conn.createStatement();
             ResultSet rs = stmt.executeQuery(sqlStmt);
@@ -110,9 +134,9 @@ public class DataBase {
      * Returns the maximum chat id.
      * @return the maximum chat id.
      */
-    public int getMaxChatId() {
+    public Integer getMaxChatId() {
         String sqlStmt = "SELECT MAX(id) FROM chat;";
-        int maxId = 0;
+        Integer maxId = null;
 
         try  {
             Statement stmt = this.conn.createStatement();
@@ -197,8 +221,9 @@ public class DataBase {
      * Registers new user in MySQL database.
      * @param nickname the user nickname.
      * @param password the user password.
+     * @return true if a user has been created otherwise false.
      */
-    public void createUser(String nickname, String password) {
+    public boolean createUser(String nickname, String password) {
         String sqlStmt = "INSERT INTO user (nickname, password) VALUES";
         sqlStmt = sqlStmt + "('" + nickname + "','" + password + "');";
 
@@ -206,19 +231,21 @@ public class DataBase {
             Statement stmt = this.conn.createStatement();
             stmt.executeUpdate(sqlStmt);
         }
-        catch (Exception ignored) { }
+        catch (Exception ex) {
+            return false;
+        }
+
+        return true;
     }
 
     /**
      * Creates a new chat between two users.
      * @param user1Id the first user's id.
      * @param user2Id the second user's id.
-     * @return 1 if the chat has just been created,
-     * 0 if the chat has already existed,
-     * -1 if the chat hasn't been created.
+     * @return true if a chat has been created otherwise false.
      */
-    public int createChat(int user1Id, int user2Id)  {
-        if (user1Id == user2Id) return -1;
+    public boolean createChat(int user1Id, int user2Id)  {
+        if (user1Id == user2Id) return false;
 
         int minId = Math.min(user1Id, user2Id);
         int maxId = Math.max(user1Id, user2Id);
@@ -239,16 +266,16 @@ public class DataBase {
             //1. Checks if chat already exists.
             ResultSet rs = stmt.executeQuery(sqlStmt);
             if (rs.next() && rs.getInt(1) != 0)
-                return 0;
+                return false;
 
             //2. Creates chat.
             stmt.executeUpdate(sqlStmtU);
         }
-        catch (SQLException e) {
-            return -1;
+        catch (SQLException ex) {
+            return false;
         }
 
-        return 1;
+        return true;
     }
 
     /**
@@ -269,7 +296,7 @@ public class DataBase {
             Statement stmt = this.conn.createStatement();
             stmt.executeUpdate(sqlStmt);
         }
-        catch (SQLException e) {
+        catch (SQLException ex) {
             return false;
         }
 

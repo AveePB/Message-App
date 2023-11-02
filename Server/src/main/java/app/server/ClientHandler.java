@@ -63,7 +63,7 @@ public class ClientHandler extends Thread {
                         throw new APIException(StatusCode.NOT_IMPLEMENTED);
                 }
                 catch (APIException ex) {
-                    this.requestHandler.handleUNKNOWN(request);
+                    this.requestHandler.handleUNKNOWN(request, ex);
                 }
             }
             catch (Exception ex) {

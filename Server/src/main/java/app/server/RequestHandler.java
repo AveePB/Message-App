@@ -3,10 +3,12 @@ package app.server;
 //Java Custom
 import app.api.APIException;
 import app.api.Request;
+import app.api.Response;
 import app.api.StatusCode;
 import app.db.DataBase;
 
 //Java Networking
+import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
 
@@ -40,7 +42,7 @@ public class RequestHandler {
         this.db = db;
     }
 
-    public void handleUNKNOWN(Request request) {
+    public void handleUNKNOWN(Request request, APIException ex) {
         System.out.println("CLIENT SENT UNKNOWN REQUEST!!");
     }
 
@@ -55,6 +57,8 @@ public class RequestHandler {
     }
 
     public void handlePUT(Request request) throws APIException {
+        Response response = new Response();
+        response.put("TYPE", Request.PUT);
 
         //REGISTRATION <- newUserNickname, newUserPassword.
         if (request.hasKey("newUserNickname") && request.hasKey("newUserPassword")) {
@@ -107,7 +111,9 @@ public class RequestHandler {
         }
     }
 
-    public void handleGET(Request request) throws APIException {
+    public void handleGET(Request request) throws APIException, IOException {
+        Response response = new Response();
+        response.put("TYPE", Request.GET);
 
         //AUTHENTICATION <- authUserNickname, authUserPassword.
         if (request.hasKey("authUserNickname") && request.hasKey("authUserPassword")) {
@@ -120,9 +126,20 @@ public class RequestHandler {
             String authUserNickname = request.getString("authUserNickname");
             String authUserPassword = request.getString("authUserPassword");
 
-            /*
-                AUTHENTICATING
-             */
+
+            response.put("authUserNickname", authUserNickname);
+            response.put("authUserPassword", authUserPassword);
+
+            if (this.db.isUserDataValid(authUserNickname, authUserPassword)) {
+                response.put("STATUS_CODE", StatusCode.OK.toInteger());
+            }
+            else {
+                response.put("STATUS_CODE", StatusCode.UNAUTHORIZED.toInteger());
+            }
+            System.out.println("READY");
+            response.sendToClient(this.sock.getOutputStream());
+            System.out.println("DONE");
+
         }
         //READING CHAT MESSAGES <- currentUserNickname, chatMemberNickname.
         else if (request.hasKey("currentUserNickname") && request.hasKey("chatMemberNickname")) {
