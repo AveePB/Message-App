@@ -89,7 +89,7 @@ public class ChatTable {
      * Creates a new chat between two users.
      * @param user1Id the first user's id.
      * @param user2Id the second user's id.
-     * @return boolean value.
+     * @return true if a chat has been created otherwise false
      */
     public static boolean createChat(Statement stmt, int user1Id, int user2Id) {
         if (user1Id == user2Id) return false;

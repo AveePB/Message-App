@@ -15,9 +15,8 @@ public class Main {
 
         /* LIST OF TASKS:
             1.TEST CURRENT SERVER FUNCTIONS (SERVER HANDLER)
-            2.CREATE THE LAST FUNCTIONALITY (SENDING MESSAGES)
-            3.CREATE THE LOGGER
-            4.COMPLETE SERVER DOCS
+            2.CREATE THE LOGGER
+            3.COMPLETE SERVER DOCS
             4.START DEVELOPMENT ON THE APP!
          */
     }

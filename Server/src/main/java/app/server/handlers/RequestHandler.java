@@ -14,7 +14,6 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 //Java Utilities
-import java.util.List;
 import java.util.Map;
 
 //Java language
@@ -29,7 +28,6 @@ public class RequestHandler {
     //CONSTANTS:
     private static String[] AUTH_KEYS = new String[]{"authUserNickname", "authUserPassword"};
     private static String[] CHAT_READING_KEYS = new String[]{"friendNickname"};
-    private static String[] LISTING_FRIENDS = new String[]{"currentUserNickname"};
 
     private static String[] REGISTRATION_KEYS = new String[]{"newUserNickname", "newUserPassword"};
     private static String[] CHAT_CREATION_KEYS = new String[]{"newFriendNickname"};
@@ -53,8 +51,11 @@ public class RequestHandler {
         this.db = db;
     }
 
-    public void handleUNKNOWN(Request request, APIException ex) {
-        System.out.println("CLIENT SENT UNKNOWN REQUEST!!");
+    public void handleUNKNOWN(Request request, APIException ex) throws IOException {
+        Response response = request.createResponse();
+        response.put("STATUS_CODE", ex.getStatusCode().toInteger());
+
+        response.sendToClient(this.sock.getOutputStream());
     }
 
     public void handleDELETE(Request request) throws APIException {
@@ -87,7 +88,7 @@ public class RequestHandler {
         else if (request.getAction() == Request.CHAT_CREATION) {
             DataValidator.validateRequest(request, this.currentUserId, RequestHandler.CHAT_CREATION_KEYS,  true);
 
-            String newFriendNickname = request.getString(RequestHandler.CHAT_READING_KEYS[0]);
+            String newFriendNickname = request.getString(RequestHandler.CHAT_CREATION_KEYS[0]);
 
 
             if (this.db.createChat(this.currentUserId, this.db.getUserId(newFriendNickname)))
@@ -96,18 +97,28 @@ public class RequestHandler {
                 response.put("STATUS_CODE",  StatusCode.UNAUTHORIZED.toInteger());
             response.sendToClient(this.sock.getOutputStream());
         }
-        //MESSAGE CREATION <- recipientNickname, message
+
         else if (request.getAction() == Request.MSG_CREATION) {
             DataValidator.validateRequest(request, this.currentUserId, RequestHandler.MSG_CREATION_KEYS, true);
 
             String recipientNickname = request.getString(RequestHandler.MSG_CREATION_KEYS[0]);
             String message = request.getString(RequestHandler.MSG_CREATION_KEYS[1]);
 
+            int recipientId = this.db.getUserId(recipientNickname);
+            int chatId = this.db.getChatId(this.currentUserId, recipientId);
 
-            //Creating the lacking part of the response.
-            /*
-               CREATING NEW MESSAGE
-             */
+
+            if (this.db.createMessage(chatId, this.currentUserId, message)) {
+                response.put("STATUS_CODE", StatusCode.OK.toInteger());
+
+                if (this.activeUsers.containsKey(recipientId))
+                    response.sendToClient(this.activeUsers.get(recipientId));
+                response.sendToClient(this.sock.getOutputStream());
+            }
+            else {
+                response.put("STATUS_CODE", StatusCode.FORBIDDEN.toInteger());
+                response.sendToClient(this.sock.getOutputStream());
+            }
         }
 
         else {
@@ -125,10 +136,14 @@ public class RequestHandler {
             String authUserPassword = request.getString(RequestHandler.AUTH_KEYS[1]);
 
 
-            if (this.db.validateUserData(authUserNickname, authUserPassword))
+            if (this.db.validateUserData(authUserNickname, authUserPassword)) {
                 response.put("STATUS_CODE", StatusCode.OK.toInteger());
-            else
+                this.currentUserId = this.db.getUserId(authUserNickname);
+            }
+            else {
                 response.put("STATUS_CODE", StatusCode.UNAUTHORIZED.toInteger());
+            }
+
             response.sendToClient(this.sock.getOutputStream());
         }
 
@@ -138,23 +153,16 @@ public class RequestHandler {
             String friendNickname = request.getString(RequestHandler.CHAT_READING_KEYS[0]);
             int chatId = this.db.getChatId(this.currentUserId, this.db.getUserId(friendNickname));
 
-
             response.put("STATUS_CODE", StatusCode.OK.toInteger());
             response.put("chatMessages", this.db.getMessages(chatId));
             response.sendToClient(this.sock.getOutputStream());
         }
 
         else if (request.getAction() == Request.LISTING_FRIENDS) {
-            DataValidator.validateRequest(request, this.currentUserId, RequestHandler.CHAT_READING_KEYS, true);
+            DataValidator.validateRequest(request, this.currentUserId, new String[]{}, true);
 
-            //Additional validation.
-            if (this.currentUserId == this.db.getUserId(request.getString(RequestHandler.CHAT_READING_KEYS[0])))  {
-                response.put("STATUS_CODE", StatusCode.OK.toInteger());
-                response.put("FRIENDS", this.db.getFriendList(this.currentUserId));
-            }
-            else {
-                response.put("STATUS_CODE", StatusCode.FORBIDDEN.toInteger());
-            }
+            response.put("STATUS_CODE", StatusCode.OK.toInteger());
+            response.put("FRIENDS", this.db.getFriendList(this.currentUserId));
 
             response.sendToClient(this.sock.getOutputStream());
         }

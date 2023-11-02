@@ -150,9 +150,31 @@ public class DataBase {
         }
     }
 
-    public boolean createChat(int userId1, int userId2) throws APIException {
+    /**
+     * Creates a new chat between two users.
+     * @param user1Id the first user's id.
+     * @param user2Id the second user's id.
+     * @return true if a chat has been created otherwise false
+     */
+    public boolean createChat(int user1Id, int user2Id) throws APIException {
         try {
-            return ChatTable.createChat(this.conn.createStatement(), userId1, userId2);
+            return ChatTable.createChat(this.conn.createStatement(), user1Id, user2Id);
+        }
+        catch (Exception ex) {
+            throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    /**
+     * Creates a new message and delivers message to online user.
+     * @param chatId the chat id.
+     * @param authorId the author's id.
+     * @param msg the message content.
+     * @return true if a message has been created otherwise false.
+     */
+    public boolean createMessage(int chatId, int authorId, String msg) throws APIException {
+        try {
+            return MessageTable.createMessage(this.conn.createStatement(), chatId,authorId, msg);
         }
         catch (Exception ex) {
             throw new APIException(StatusCode.INTERNAL_SERVER_ERROR);
