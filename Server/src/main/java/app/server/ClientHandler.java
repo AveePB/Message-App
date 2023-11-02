@@ -1,8 +1,9 @@
 package app.server;
 
 //Java Custom
+import app.api.APIException;
 import app.api.Request;
-import app.api.UnknownRequest;
+import app.api.StatusCode;
 import app.db.DataBase;
 
 //Java Input & Output
@@ -59,9 +60,9 @@ public class ClientHandler extends Thread {
                     else if (request.isGET())
                         this.requestHandler.handleGET(request);
                     else
-                        throw new UnknownRequest("Unknown Request!");
+                        throw new APIException(StatusCode.NOT_IMPLEMENTED);
                 }
-                catch (UnknownRequest ex) {
+                catch (APIException ex) {
                     this.requestHandler.handleUNKNOWN(request);
                 }
             }

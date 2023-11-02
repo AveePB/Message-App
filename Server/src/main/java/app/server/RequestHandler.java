@@ -1,8 +1,9 @@
 package app.server;
 
 //Java Custom
+import app.api.APIException;
 import app.api.Request;
-import app.api.UnknownRequest;
+import app.api.StatusCode;
 import app.db.DataBase;
 
 //Java Networking
@@ -21,7 +22,7 @@ import java.lang.String;
  * of requests.
  */
 public class RequestHandler {
-    //Variables
+    //Variables:
     private Map<Integer, OutputStream> activeUsers;
     private Integer currentUserId;
     private Socket sock;
@@ -43,88 +44,117 @@ public class RequestHandler {
         System.out.println("CLIENT SENT UNKNOWN REQUEST!!");
     }
 
-    public void handleDELETE(Request request) throws UnknownRequest {
+    public void handleDELETE(Request request) throws APIException {
         //There are no DELETE requests.
-        throw new UnknownRequest("UNKNOWN DELETE REQUEST!!!");
+        throw new APIException(StatusCode.NOT_IMPLEMENTED);
     }
 
-    public void handlePOST(Request request) throws UnknownRequest {
+    public void handlePOST(Request request) throws APIException {
         //There are no POST requests.
-        throw new UnknownRequest("UNKNOWN POST REQUEST!!!");
+        throw new APIException(StatusCode.NOT_IMPLEMENTED);
     }
 
-    public void handlePUT(Request request) throws UnknownRequest {
-        try {
-            //REGISTRATION <- newUserNickname, newUserPassword.
-            if ((this.currentUserId == null) && (request.hasKey("newUserNickname") && request.hasKey("newUserPassword"))) {
-                String newUserNickname = request.getString("newUserNickname");
-                String newUserPassword = request.getString("newUserPassword");
+    public void handlePUT(Request request) throws APIException {
 
+        //REGISTRATION <- newUserNickname, newUserPassword.
+        if (request.hasKey("newUserNickname") && request.hasKey("newUserPassword")) {
+            if (this.currentUserId != null)
+                throw new APIException(StatusCode.FORBIDDEN);
 
-                System.out.println("CLIENT WANTS TO CREATE NEW ACCOUNT!!!");
-            }
-            //CHAT CREATION <- currentUserNickname, chatMemberNickname.
-            else if ((this.currentUserId != null) && (request.hasKey("currentUserNickname") && request.hasKey("chatMemberNickname"))) {
-                String currentUserNickname = request.getString("currentUserNickname");
-                String chatMemberNickname = request.getString("chatMemberNickname");
+            if (!(request.isValueString("newUserNickname")) || !(request.isValueString("newUserPassword")))
+                throw new APIException(StatusCode.BAD_REQUEST);
 
+            String newUserNickname = request.getString("newUserNickname");
+            String newUserPassword = request.getString("newUserPassword");
 
-
-                System.out.println("CLIENT WANTS TO CREATE NEW CHAT!!!");
-            }
-            //MESSAGE CREATION <- recipientNickname, message, currentUserNickname.
-            else if ((this.currentUserId != null) && (request.hasKey("recipientNickname") && request.hasKey("message") && request.hasKey("currentUserNickname"))) {
-                String recipientNickname = request.getString("recipientNickname");
-                String message = request.getString("message");
-                String currentUserNickname = request.getString("currentUserNickname");
-
-
-
-                System.out.println("CLIENT WANTS TO CREATE NEW MESSAGE!!!");
-            }
-            else {
-                throw new UnknownRequest("UNKNOWN PUT REQUEST!!!");
-            }
+            /*
+                CREATING NEW ACCOUNT
+             */
         }
-        catch (Exception ex) {
-            throw new UnknownRequest("UNKNOWN PUT REQUEST!!!");
+        //CHAT CREATION <- currentUserNickname, chatMemberNickname.
+        else if (request.hasKey("currentUserNickname") && request.hasKey("chatMemberNickname")) {
+            if (this.currentUserId == null)
+                throw new APIException(StatusCode.FORBIDDEN);
+
+            if (!(request.isValueString("currentUserNickname")) || !(request.isValueString("chatMemberNickname")))
+                throw new APIException(StatusCode.BAD_REQUEST);
+
+            String currentUserNickname = request.getString("currentUserNickname");
+            String chatMemberNickname = request.getString("chatMemberNickname");
+
+            /*
+                CREATING NEW CHAT
+             */
+        }
+        //MESSAGE CREATION <- recipientNickname, message, currentUserNickname.
+        else if (request.hasKey("recipientNickname") && request.hasKey("message") && request.hasKey("currentUserNickname")) {
+            if (this.currentUserId == null)
+                throw new APIException(StatusCode.FORBIDDEN);
+
+            if (!(request.isValueString("recipientNickname")) || !(request.isValueString("message")) || !(request.isValueString("currentUserNickname")))
+                throw new APIException(StatusCode.BAD_REQUEST);
+
+            String recipientNickname = request.getString("recipientNickname");
+            String message = request.getString("message");
+            String currentUserNickname = request.getString("currentUserNickname");
+
+            /*
+               CREATING NEW MESSAGE
+             */
+        }
+        else {
+            throw new APIException(StatusCode.NOT_IMPLEMENTED);
         }
     }
 
-    public void handleGET(Request request) throws UnknownRequest {
-        try {
-            //AUTHENTICATION <- authUserNickname, authUserPassword.
-            if ((this.currentUserId == null) && (request.hasKey("authUserNickname") && request.hasKey("authUserPassword"))) {
-                String authUserNickname = request.getString("authUserNickname");
-                String authUserPassword = request.getString("authUserPassword");
+    public void handleGET(Request request) throws APIException {
 
+        //AUTHENTICATION <- authUserNickname, authUserPassword.
+        if (request.hasKey("authUserNickname") && request.hasKey("authUserPassword")) {
+            if (this.currentUserId != null)
+                throw new APIException(StatusCode.FORBIDDEN);
 
+            if (!(request.isValueString("authUserNickname")) || !(request.isValueString("authUserPassword")))
+                throw new APIException(StatusCode.BAD_REQUEST);
 
-                System.out.println("CLIENT WANTS THE AUTHENTICATION!!!");
-            }
-            //GETTING CHAT LIST <- currentUserNickname.
-            else if ((this.currentUserId != null) && (request.hasKey("currentUserNickname"))) {
-                String currentUserNickname = request.getString("currentUserNickname");
+            String authUserNickname = request.getString("authUserNickname");
+            String authUserPassword = request.getString("authUserPassword");
 
-
-
-                System.out.println("CLIENT WANTS TO GET CHAT LIST!!!");
-            }
-            //READING CHAT MESSAGES <- currentUserNickname, chatMemberNickname.
-            else if ((this.currentUserId != null) && (request.hasKey("currentUserNickname") && request.hasKey("chatMemberNickname"))) {
-                String currentUserNickname = request.getString("currentUserNickname");
-                String chatMemberNickname = request.getString("chatMemberNickname");
-
-
-
-                System.out.println("CLIENT WANTS TO READ CHAT MESSAGES!!!");
-            }
-            else {
-                throw new UnknownRequest("UNKNOWN GET REQUEST!!!");
-            }
+            /*
+                AUTHENTICATING
+             */
         }
-        catch (Exception ex) {
-            throw new UnknownRequest("UNKNOWN GET REQUEST!!!");
+        //READING CHAT MESSAGES <- currentUserNickname, chatMemberNickname.
+        else if (request.hasKey("currentUserNickname") && request.hasKey("chatMemberNickname")) {
+            if (this.currentUserId == null)
+                throw new APIException(StatusCode.FORBIDDEN);
+
+            if (!request.isValueString("currentUserNickname") && !(request.isValueString("chatMemberNickname")))
+                throw new APIException(StatusCode.BAD_REQUEST);
+
+            String currentUserNickname = request.getString("currentUserNickname");
+            String chatMemberNickname = request.getString("chatMemberNickname");
+
+            /*
+                READING THE CHAT MESSAGES
+             */
+        }
+        //GETTING CHAT LIST <- currentUserNickname.
+        else if (request.hasKey("currentUserNickname")) {
+            if (this.currentUserId == null)
+                throw new APIException(StatusCode.FORBIDDEN);
+
+            if (!request.isValueString("currentUserNickname"))
+                throw new APIException(StatusCode.BAD_REQUEST);
+
+            String currentUserNickname = request.getString("currentUserNickname");
+
+            /*
+             GETTING CHAT LIST
+             */
+        }
+        else {
+            throw new APIException(StatusCode.NOT_IMPLEMENTED);
         }
     }
 }

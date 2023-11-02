@@ -194,6 +194,22 @@ public class DataBase {
     }
 
     /**
+     * Registers new user in MySQL database.
+     * @param nickname the user nickname.
+     * @param password the user password.
+     */
+    public void createUser(String nickname, String password) {
+        String sqlStmt = "INSERT INTO user (nickname, password) VALUES";
+        sqlStmt = sqlStmt + "('" + nickname + "','" + password + "');";
+
+        try {
+            Statement stmt = this.conn.createStatement();
+            stmt.executeUpdate(sqlStmt);
+        }
+        catch (Exception ignored) { }
+    }
+
+    /**
      * Creates a new chat between two users.
      * @param user1Id the first user's id.
      * @param user2Id the second user's id.
