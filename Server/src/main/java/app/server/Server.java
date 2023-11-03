@@ -3,7 +3,7 @@ package app.server;
 //Java Custom
 import app.Config;
 import app.db.DataBase;
-import app.server.handlers.ClientHandler;
+import app.log.Logger;
 
 //Java Input & Output
 import java.io.IOException;
@@ -49,7 +49,7 @@ public class Server {
      */
     public void listen() {
         this.isListening = true;
-        System.out.println("STARTED LISTENING FOR CLIENTS!");
+        Logger.logINFO("Server has started to listen for clients...");
         
         while (this.isListening) {
             try {
@@ -57,7 +57,7 @@ public class Server {
                 new ClientHandler(this.activeUsers, clientSock, this.db).start();
             }
             catch (Exception ex) {
-                //Logger func
+                Logger.logEMERG(ex.toString());
                 this.isListening = false;
             }
         }

@@ -6,11 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0aaf4f0c-9a06-4584-9ec7-2b3c577f41a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/db/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/db/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/db/tables/ChatTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/db/tables/ChatTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/db/tables/MessageTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/db/tables/MessageTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/handlers/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/handlers/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/api/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/api/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/api/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/api/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/api/StatusCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/api/StatusCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/log/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/log/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/log/LoggerLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/log/LogLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/DataValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/DataValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/handlers/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/handlers/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/requesthandlers/RequestHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

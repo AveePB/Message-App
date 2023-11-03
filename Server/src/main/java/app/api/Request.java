@@ -65,6 +65,11 @@ public class Request {
         this.jsonObject = new JSONObject(new String(jsonObjBytes));
     }
 
+    @Override
+    public String toString() {
+        return this.jsonObject.toString();
+    }
+
     /**
      * Function compares request types.
      * @param requestType the wanted request type.

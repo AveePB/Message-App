@@ -15,14 +15,13 @@ public class DataValidator {
      * Validates client's request. It's assumed that requests
      * have only string values.
      * @param request the client request.
-     * @param currentUserId the current user id.
+     * @param isUserLogged the boolean value.
      * @param keys the keys for field.
      * @param authRequired the authentication requirement.
      */
-    public static void validateRequest(Request request, Integer currentUserId, String[] keys, boolean authRequired) throws APIException {
+    public static void validateRequest(Request request, boolean isUserLogged, String[] keys, boolean authRequired) throws APIException {
         // 1.USER AUTHENTICATION.
-        if (!authRequired && currentUserId != null) throw new APIException(StatusCode.FORBIDDEN);
-        if (authRequired && currentUserId == null) throw new APIException(StatusCode.FORBIDDEN);
+        if (isUserLogged != authRequired) throw new APIException(StatusCode.FORBIDDEN);
 
         // 2.Request VALIDATION (preliminary).
         for (String key: keys) {

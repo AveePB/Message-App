@@ -17,6 +17,8 @@ public class Config {
     public static final String MYSQL_DB_URL = "jdbc:mysql://localhost/messageapp";
 
     //The Logger constants:
+    public static final boolean ARE_SPACES_BETWEEN_LOGS = false;
     public static final boolean ARE_LOGS_APPENDED = true;
-    public static final String LOG_DIR = "./logs/records.log";
+    public static final String LOG_FILE_NAME = "records.log";
+    public static final String LOG_DIR = "./logs/";
 }

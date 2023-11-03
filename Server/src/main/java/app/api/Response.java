@@ -33,6 +33,18 @@ public class Response {
     }
 
     /**
+     * Returns the STATUS_CODE or -1 if it's not set.
+     */
+    public int getStatusCode() {
+        try {
+            return this.jsonObject.getInt("STATUS_CODE");
+        }
+        catch (Exception ex) {
+            return -1;
+        }
+    }
+
+    /**
      * Appends a new field in the response.
      * @param key the field name.
      * @param value the field value.

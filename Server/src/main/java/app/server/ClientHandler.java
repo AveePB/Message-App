@@ -1,10 +1,12 @@
-package app.server.handlers;
+package app.server;
 
 //Java Custom
 import app.api.APIException;
 import app.api.Request;
 import app.api.StatusCode;
 import app.db.DataBase;
+import app.log.Logger;
+import app.server.requesthandlers.RequestHandler;
 
 //Java Input & Output
 import java.io.OutputStream;
@@ -43,12 +45,14 @@ public class ClientHandler extends Thread {
 
     @Override
     public void run() {
+        Logger.logINFO("Server accepted connection with " + this.sock.getInetAddress().getHostAddress());
         this.isListening = true;
 
         while (this.isListening) {
             try {
                 //Request <- the Base64 encoded String of a JSON object
                 Request request = new Request(this.sock.getInputStream());
+                Logger.logINFO(this.sock.getInetAddress().getHostAddress() + "  has sent request " + request);
 
                 try {
                     if (request.isDELETE())
@@ -67,10 +71,22 @@ public class ClientHandler extends Thread {
                 }
             }
             catch (Exception ex) {
-                //logger func
-                System.out.println(ex);
+                Logger.logERROR(ex.toString());
+
+                closeConnection();
                 this.isListening = false;
             }
         }
+        Logger.logINFO("Server lost connection with " + this.sock.getInetAddress().getHostAddress());
+    }
+
+    /**
+     * Instantly closes connection with the client.
+     */
+    private void closeConnection() {
+        try {
+            this.sock.close();
+        }
+        catch (Exception ignored) { }
     }
 }
