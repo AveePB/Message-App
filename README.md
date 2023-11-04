@@ -4,15 +4,18 @@ to communicate with each other in real time. This project is developed to learn
 more about designing and creating more engaging applications.
 
 ## Server Configuration
-The server application has the configuration file (.\Server\src\main\java\app\Config.java).
+The server application has the configuration file (***.\Server\src\main\java\app\Config.java***).
 It is used to change the most important server parameters.
 
 ### API Configuration
-It is requiered to set the server port (default: 55555).
+**PORT** <- the server port (default: 55555).
 
 ### Database Configuration
-...
->>>>>>> ddc0e15b7afddba1f2477b923b4fa1be3f146988
+It is recommended to create the MySQL database using the sql script (***.\Server\assets\sql\create_db.sql***).
+
+**MYSQL_USERNAME** <- the MySQL user nickname used to manage the database (default: "root").
+**MYSQL_PASSWORD** <- the MySQL user password used to log in (default: "password").
+**MYSQL_DB_URL** <- the MySQL database URL (default: "jdbc:mysql://localhost/messageapp").
 
 ### Logger Configuration
 ...
