@@ -7,17 +7,17 @@ more about designing and creating more engaging applications.
 The server application has the configuration file (***.\Server\src\main\java\app\Config.java***).
 It is used to change the most important server parameters.
 
-### API Configuration
+### API Constants
 - **PORT** <- the server port (default: 55555).
 
-### Database Configuration
+### Database Constants
 It is recommended to create the MySQL database using the sql script (***.\Server\assets\sql\create_db.sql***).
 
 - **MYSQL_USERNAME** <- the MySQL user nickname used to manage the database (default: "root").
 - **MYSQL_PASSWORD** <- the MySQL user password used to log in (default: "password").
 - **MYSQL_DB_URL** <- the MySQL database URL (default: "jdbc:mysql://localhost/messageapp").
 
-### Logger Configuration
+### Logger Constants
 - **ARE_SPACES_BETWEEN_LOGS** <- it is used to determine if log messages are separated by the line.
 - **ARE_LOGS_APPENDED** <- it is used to determine if log messages are written to the file or appended.
 - **LOG_FILE_NAME** <- the name of the file that stores server log messages (default: "records.log").
