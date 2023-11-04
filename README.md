@@ -18,7 +18,10 @@ It is recommended to create the MySQL database using the sql script (***.\Server
 - **MYSQL_DB_URL** <- the MySQL database URL (default: "jdbc:mysql://localhost/messageapp").
 
 ### Logger Configuration
-...
+- **ARE_SPACES_BETWEEN_LOGS** <- it is used to determine if log messages are separated by the line.
+- **ARE_LOGS_APPENDED** <- it is used to determine if log messages are written to the file or appended.
+- **LOG_FILE_NAME** <- the name of the file that stores server log messages (default: "records.log").
+- **LOG_DIR** <- the name of the folder that stroes log files (default: "./logs/").
 
 ## Client Configuration
 ...
