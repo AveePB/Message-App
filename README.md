@@ -1,24 +1,5 @@
 # Message App (Socket Programming Project in Java)
 
-<<<<<<< HEAD
-Title:
-Message App (Socket Programming Project in Java)
-
-Description:
-Welcome to the "Message App" project! This is a microservice that allows users 
-to communicate with each other in real time. This project is developed to learn 
-more about designing and creating more engaging applications.
-
-Database Configuration:
-MySQL Community Edition is the freely downloadable version of the world's most 
-popular open source database. 
-
-Server Configuration:
-
-
-Client Configuration:
-
-=======
 ## Description
 Welcome to the "Message App" project! This is an application that allows users 
 to communicate with each other in real time. This project is developed to learn 
