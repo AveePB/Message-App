@@ -8,14 +8,14 @@ The server application has the configuration file (***.\Server\src\main\java\app
 It is used to change the most important server parameters.
 
 ### API Configuration
-**PORT** <- the server port (default: 55555).
+- **PORT** <- the server port (default: 55555).
 
 ### Database Configuration
 It is recommended to create the MySQL database using the sql script (***.\Server\assets\sql\create_db.sql***).
 
 - **MYSQL_USERNAME** <- the MySQL user nickname used to manage the database (default: "root").
-**MYSQL_PASSWORD** <- the MySQL user password used to log in (default: "password").
-**MYSQL_DB_URL** <- the MySQL database URL (default: "jdbc:mysql://localhost/messageapp").
+- **MYSQL_PASSWORD** <- the MySQL user password used to log in (default: "password").
+- **MYSQL_DB_URL** <- the MySQL database URL (default: "jdbc:mysql://localhost/messageapp").
 
 ### Logger Configuration
 ...
