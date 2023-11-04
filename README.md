@@ -13,7 +13,7 @@ It is used to change the most important server parameters.
 ### Database Configuration
 It is recommended to create the MySQL database using the sql script (***.\Server\assets\sql\create_db.sql***).
 
-**MYSQL_USERNAME** <- the MySQL user nickname used to manage the database (default: "root").
+- **MYSQL_USERNAME** <- the MySQL user nickname used to manage the database (default: "root").
 **MYSQL_PASSWORD** <- the MySQL user password used to log in (default: "password").
 **MYSQL_DB_URL** <- the MySQL database URL (default: "jdbc:mysql://localhost/messageapp").
 
