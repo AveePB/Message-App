@@ -61,7 +61,7 @@ public class AuthWindow {
 
         this.mainFrame.setLayout(null);
         this.mainFrame.setResizable(false);
-        this.mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.mainFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
         this.mainFrame.setSize(AuthWindow.WINDOW_WIDTH, AuthWindow.WINDOW_HEIGHT);
         this.mainFrame.setIconImage(new ImageIcon(AuthWindow.WINDOW_ICON_PATH).getImage());

@@ -1,11 +1,11 @@
 //Java Custom
 import app.Application;
-import app.gui.authwindow.AuthWindow;
 
 public class Main {
 
     public static void main(String[] args) {
-        new AuthWindow(null).open();
+        //1.I need to create the API !!! (Request, Response, StatusCode, RequestAction, RequestTYPE)
+
         /*
         Application app = new Application();
         app.run();
