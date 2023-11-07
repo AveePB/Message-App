@@ -30,6 +30,20 @@ public enum StatusCode {
         this.codeValue = codeValue;
     }
 
+    public static StatusCode getInstance(int codeValue) {
+        if (codeValue == StatusCode.OK.codeValue) return StatusCode.OK;
+        if (codeValue == StatusCode.CREATED.codeValue) return StatusCode.CREATED;
+
+        if (codeValue == StatusCode.BAD_REQUEST.codeValue) return StatusCode.BAD_REQUEST;
+        if (codeValue == StatusCode.UNAUTHORIZED.codeValue) return StatusCode.UNAUTHORIZED;
+        if (codeValue == StatusCode.FORBIDDEN.codeValue) return StatusCode.FORBIDDEN;
+
+        if (codeValue == StatusCode.INTERNAL_SERVER_ERROR.codeValue) return StatusCode.INTERNAL_SERVER_ERROR;
+        if (codeValue == StatusCode.NOT_IMPLEMENTED.codeValue) return StatusCode.NOT_IMPLEMENTED;
+
+        return StatusCode.BAD_REQUEST;
+    }
+
     @Override
     public String toString() {
         return this.strValue;

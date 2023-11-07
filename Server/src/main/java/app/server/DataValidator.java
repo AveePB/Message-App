@@ -20,10 +20,14 @@ public class DataValidator {
      * @param authRequired the authentication requirement.
      */
     public static void validateRequest(Request request, boolean isUserLogged, String[] keys, boolean authRequired) throws APIException {
-        // 1.USER AUTHENTICATION.
+        //1.USER AUTHENTICATION.
         if (isUserLogged != authRequired) throw new APIException(StatusCode.FORBIDDEN);
 
-        // 2.Request VALIDATION (preliminary).
+        //2. Request FORM validation.
+        if (!(request.hasKey("TYPE") && request.hasKey("ACTION")))
+            throw new APIException(StatusCode.BAD_REQUEST);
+
+        //3.Request VALIDATION (preliminary).
         for (String key: keys) {
             if (request.hasKey(key) && request.isValueString(key)) continue;
             throw new APIException(StatusCode.BAD_REQUEST);

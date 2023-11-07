@@ -603,3 +603,4 @@
 [Informatinonal] {Fri Nov 03 13:18:23 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
 [Error] {Fri Nov 03 13:18:24 CET 2023}: java.net.SocketException: Connection reset
 [Informatinonal] {Fri Nov 03 13:18:24 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Tue Nov 07 17:14:56 CET 2023}: Server has started to listen for clients...

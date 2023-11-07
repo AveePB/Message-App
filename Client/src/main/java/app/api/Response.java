@@ -1,7 +1,6 @@
 package app.api;
 
 //Java JSON
-import org.json.JSONException;
 import org.json.JSONObject;
 
 //Java Input & Output
@@ -12,6 +11,9 @@ import java.io.InputStreamReader;
 
 //Java Utilities
 import java.util.Base64;
+
+//Java Language
+import java.lang.String;
 
 /**
  * This class is used as an easy way to read
@@ -85,5 +87,13 @@ public class Response {
      */
     public int getAction() {
         return this.jsonObject.getInt("ACTION");
+    }
+
+    /**
+     * Returns the status code object.
+     * @return the status code object.
+     */
+    public StatusCode getStatusCode() {
+        return StatusCode.getInstance(this.jsonObject.getInt("STATUS_CODE"));
     }
 }
