@@ -24,7 +24,13 @@ It is recommended to create the MySQL database using the sql script (***.\Server
 - **LOG_DIR** <- the name of the folder that stroes log files (default: "./logs/").
 
 ## Client Configuration
-...
+The client application has the configuration file (***.\Client\src\main\java\app\Config.java***).
+It is used to change the most important application parameters.
+
+### API Configuration
+- **SERVER_IP** <- the server IP (default: "localhost").
+- **SERVER_PORT** <- the server port (default: 55555).
+
 
 ## Usage
 ...
