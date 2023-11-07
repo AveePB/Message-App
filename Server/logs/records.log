@@ -604,3 +604,50 @@
 [Error] {Fri Nov 03 13:18:24 CET 2023}: java.net.SocketException: Connection reset
 [Informatinonal] {Fri Nov 03 13:18:24 CET 2023}: Server lost connection with 127.0.0.1
 [Informatinonal] {Tue Nov 07 17:14:56 CET 2023}: Server has started to listen for clients...
+[Informatinonal] {Tue Nov 07 18:16:49 CET 2023}: Server has started to listen for clients...
+[Informatinonal] {Tue Nov 07 18:16:51 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:16:59 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"[1]","TYPE":-11}
+[Informatinonal] {Tue Nov 07 18:16:59 CET 2023}: STATUS CODE 401 sent to 127.0.0.1
+[Error] {Tue Nov 07 18:17:09 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Tue Nov 07 18:17:09 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:17:56 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:01 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Tue Nov 07 18:18:01 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:07 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Warning] {Tue Nov 07 18:18:07 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:07 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:12 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Warning] {Tue Nov 07 18:18:12 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:12 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:13 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1230,"newUserNickname":"messi","newUserPassword":"1","TYPE":-111}
+[Warning] {Tue Nov 07 18:18:13 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:13 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:14 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1230,"newUserNickname":"messi","newUserPassword":"1","TYPE":-111}
+[Warning] {Tue Nov 07 18:18:14 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:14 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:15 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1230,"newUserNickname":"messi","newUserPassword":"1","TYPE":-111}
+[Warning] {Tue Nov 07 18:18:15 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:15 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:15 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Warning] {Tue Nov 07 18:18:15 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:15 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:16 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Warning] {Tue Nov 07 18:18:16 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:16 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:17 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Warning] {Tue Nov 07 18:18:17 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:17 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:18 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Warning] {Tue Nov 07 18:18:18 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:18 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:19 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Warning] {Tue Nov 07 18:18:19 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:19 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:19 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1230,"newUserNickname":"messi","newUserPassword":"1","TYPE":-111}
+[Warning] {Tue Nov 07 18:18:19 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:19 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Informatinonal] {Tue Nov 07 18:18:19 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Warning] {Tue Nov 07 18:18:19 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Tue Nov 07 18:18:19 CET 2023}: STATUS CODE 403 sent to 127.0.0.1
+[Error] {Tue Nov 07 18:18:28 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Tue Nov 07 18:18:28 CET 2023}: Server lost connection with 127.0.0.1

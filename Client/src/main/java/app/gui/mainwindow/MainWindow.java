@@ -1,8 +1,5 @@
 package app.gui.mainwindow;
 
-//Java Custom
-import app.api.Client;
-
 //Java Swing
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -40,18 +37,13 @@ public class MainWindow {
     private JFrame mainFrame;
     private JTextArea chatTA, msgWorkshopTA;
 
-    //API interface
-    Client client;
-
     //User data
     String userNickname;
 
     /**
      * Constructs a main window object.
-     * @param client the application API object.
      */
-    public MainWindow(Client client, String userNickname) {
-        //this.client = client;
+    public MainWindow(String userNickname) {
         this.userNickname = userNickname;
 
         initializeMainFrame();

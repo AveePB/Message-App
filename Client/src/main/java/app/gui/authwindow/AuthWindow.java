@@ -1,7 +1,8 @@
 package app.gui.authwindow;
 
 //Java Custom
-import app.api.Client;
+import app.gui.authwindow.actionlisteners.LogInButtonListener;
+import app.gui.authwindow.actionlisteners.SignUpButtonListener;
 
 //Java Swing
 import javax.swing.JButton;
@@ -14,6 +15,12 @@ import javax.swing.WindowConstants;
 
 //Java Abstract Window Toolkit
 import java.awt.Font;
+
+//Java Input & Output
+import java.io.IOException;
+
+//Java Networking
+import java.net.Socket;
 
 //Java Language
 import java.lang.String;
@@ -36,15 +43,14 @@ public class AuthWindow {
     private JTextField nicknameTF;
     private JPasswordField passwordPF;
 
-    //API interface
-    private Client client;
+    //Server socket
+    private Socket sock;
 
     /**
      * Constructs an auth window object.
-     * @param client the application API object.
      */
-    public AuthWindow(Client client) {
-        //this.client = client;
+    public AuthWindow(Socket sock) throws IOException {
+        this.sock = sock;
 
         initializeMainFrame();
         initializeLogoPanel();
@@ -119,7 +125,7 @@ public class AuthWindow {
     /**
      * It initializes the decision panel.
      */
-    private void initializeDecisionPanel() {
+    private void initializeDecisionPanel() throws IOException {
         Font btnFont = new Font("", Font.PLAIN, 20);
         int btnWidth = 115, btnHeight = 40;
 
@@ -127,13 +133,13 @@ public class AuthWindow {
         this.signUpBtn = new JButton("Sign up");
         this.signUpBtn.setBounds(90, 400, btnWidth, btnHeight);
         this.signUpBtn.setFont(btnFont);
-        //this.signUpBtn.addActionListener(new SignUpBtnActionListener(this.client));
+        this.signUpBtn.addActionListener(new SignUpButtonListener(this.mainFrame, this.passwordPF, this.nicknameTF, this.sock));
 
         //Log in Button Section
         this.logInBtn = new JButton("Log in");
         this.logInBtn.setBounds(215, 400, btnWidth, btnHeight);
         this.logInBtn.setFont(btnFont);
-        //this.logInBtn.addActionListener(new LogInBtnListener(this.client));
+        this.logInBtn.addActionListener(new LogInButtonListener(this.mainFrame, this.passwordPF, this.nicknameTF, this.sock));
 
         //Adds GUI components to the frame.
         this.mainFrame.add(this.signUpBtn);

@@ -1,9 +1,13 @@
 package app;
 
 //Java Custom
-import app.api.Client;
-import app.Config;
 import app.gui.authwindow.AuthWindow;
+
+//Java Input & Output
+import java.io.IOException;
+
+//Java Networking
+import java.net.Socket;
 
 /**
  * This is the application class used to
@@ -12,17 +16,16 @@ import app.gui.authwindow.AuthWindow;
 public class Application {
     //Variables:
     private AuthWindow authWindow;
-    private Client client;
 
-    public Application() {
-        //Initializing the API interface.
-        //this.client = new Client(Config.SERVER_IP_ADDRESS, Config.SERVER_PORT);
+    public Application() throws IOException {
+        //Initializing the socket.
+        Socket sock = new Socket(Config.SERVER_IP, Config.SERVER_PORT);
 
         //Initializing the application authorization window.
-        //this.authWindow = new AuthWindow(this.client);
+        this.authWindow = new AuthWindow(sock);
     }
 
     public void run() {
-        //this.authWindow.open();
+        this.authWindow.open();
     }
 }
