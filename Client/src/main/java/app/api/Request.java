@@ -132,7 +132,7 @@ public class Request {
      * @param message the message.
      * @throws IOException java.io.IOException
      */
-    public static void sendChatCreationAction(OutputStream stream, String recipientNickname, String message) throws IOException {
+    public static void sendMessageCreationAction(OutputStream stream, String recipientNickname, String message) throws IOException {
         JSONObject obj = new JSONObject();
         obj.put("TYPE", Request.PUT);
         obj.put("ACTION", Request.MSG_CREATION);

@@ -14,6 +14,7 @@ import java.util.Base64;
 
 //Java Language
 import java.lang.String;
+import java.util.List;
 
 /**
  * This class is used as an easy way to read
@@ -71,6 +72,33 @@ public class Response {
     public boolean isValueInt(String key) {
         Object obj = this.jsonObject.get(key);
         return obj instanceof Integer;
+    }
+
+    /**
+     * Returns a string value behind the key.
+     * @param key the field name.
+     * @return the string value.
+     */
+    public String getString(String key) {
+        return this.jsonObject.getString(key);
+    }
+
+    /**
+     * Returns an int value behind the key.
+     * @param key the field name.
+     * @return the int value.
+     */
+    public int getInt(String key) {
+        return this.jsonObject.getInt(key);
+    }
+
+    /**
+     * Returns a list behind the key.
+     * @param key the field name.
+     * @return the list of objects.
+     */
+    public List<Object> getListOfObjects(String key) {
+        return this.jsonObject.getJSONArray(key).toList();
     }
 
     /**

@@ -1,5 +1,10 @@
 package app.gui.mainwindow;
 
+//Java Custom
+import app.gui.mainwindow.actionlisteners.AddFriendButtonListener;
+import app.gui.mainwindow.actionlisteners.FriendListComboBoxListener;
+import app.gui.mainwindow.actionlisteners.SendMessageButtonListener;
+
 //Java Swing
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -16,6 +21,9 @@ import javax.swing.WindowConstants;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
+
+//Java Networking
+import java.net.Socket;
 
 //Java Language
 import java.lang.String;
@@ -37,13 +45,17 @@ public class MainWindow {
     private JFrame mainFrame;
     private JTextArea chatTA, msgWorkshopTA;
 
+    //Server socket
+    private Socket sock;
+
     //User data
     String userNickname;
 
     /**
      * Constructs a main window object.
      */
-    public MainWindow(String userNickname) {
+    public MainWindow(Socket sock, String userNickname) {
+        this.sock = sock;
         this.userNickname = userNickname;
 
         initializeMainFrame();
@@ -79,7 +91,7 @@ public class MainWindow {
         //Add Friend Section
         this.addFriendBtn = new JButton("Add Friend");
         this.addFriendBtn.setBounds(4, 5, btnWidth, btnHeight);
-        //this.addFriendBtn.addActionListener(...);
+        this.addFriendBtn.addActionListener(new AddFriendButtonListener(this.mainFrame, this.sock));
 
         //Friend List Section
         JLabel friendListTitle = new JLabel("Current chat");
@@ -88,7 +100,7 @@ public class MainWindow {
 
         this.friendListCB = new JComboBox<>();
         this.friendListCB.setBounds(250, 5,friendListWidth, friendListHeight);
-        //this.friendListCB.addActionListener(...);
+        this.friendListCB.addActionListener(new FriendListComboBoxListener(this.friendListCB, this.mainFrame, this.sock));
 
 
         //Adds GUI components to the frame.
@@ -148,7 +160,7 @@ public class MainWindow {
         //Send Message Button Section
         this.sendMsgBtn = new JButton("Send");
         this.sendMsgBtn.setBounds(415, 300, 85, 64);
-        //this.sendMsgBtn.addActionListener(...);
+        this.sendMsgBtn.addActionListener(new SendMessageButtonListener(this.friendListCB, this.msgWorkshopTA, this.mainFrame, this.sock));
 
         //Adds GUI components to the frame.
         this.mainFrame.add(msgWorkshopPanel);
