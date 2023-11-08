@@ -1,6 +1,9 @@
 package app.gui.mainwindow;
 
 //Java Custom
+import app.api.Request;
+import app.api.Response;
+import app.api.StatusCode;
 import app.gui.mainwindow.actionlisteners.AddFriendButtonListener;
 import app.gui.mainwindow.actionlisteners.FriendListComboBoxListener;
 import app.gui.mainwindow.actionlisteners.SendMessageButtonListener;
@@ -12,6 +15,7 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -49,7 +53,7 @@ public class MainWindow {
     private Socket sock;
 
     //User data
-    String userNickname;
+    private String userNickname;
 
     /**
      * Constructs a main window object.
@@ -167,10 +171,62 @@ public class MainWindow {
         this.mainFrame.add(this.sendMsgBtn);
     }
 
+
+    /**
+     * Starts listening for the server responses. The Function
+     * handles those responses.
+     */
+    private void listenForResponses() {
+        try {
+            Request.sendListingFriendsAction(this.sock.getOutputStream());
+
+            while (this.mainFrame.isVisible()) {
+                Response response = new Response(this.sock.getInputStream());
+
+                if (response.getType() == Request.GET && response.getStatusCode() == StatusCode.OK) {
+
+                    if (response.getAction() == Request.LISTING_FRIENDS) {
+                        for (Object obj: response.getListOfObjects("friendList"))
+                            this.friendListCB.addItem((String) obj);
+                    }
+
+                    else if (response.getAction() == Request.READING_CHAT) {
+                        StringBuilder chatMessages = new StringBuilder();
+                        for (Object obj: response.getListOfObjects("chatMessages"))
+                            chatMessages.append((String) obj).append('\n');
+
+                        this.chatTA.setText(chatMessages.toString());
+                    }
+                }
+                else if (response.getType() == Request.PUT && response.getStatusCode() == StatusCode.CREATED) {
+
+                    if (response.getAction() == Request.CHAT_CREATION) {
+                        this.friendListCB.addItem(response.getString("newFriendNickname"));
+                        JOptionPane.showMessageDialog(null, "Check your friend list, you've got new friend :D.");
+                    }
+
+                    else if (response.getAction() == Request.MSG_CREATION) {
+                        this.msgWorkshopTA.setText("");
+
+                        String newMessage = this.userNickname + ": " + response.getString("message") + '\n';
+                        this.chatTA.setText(this.chatTA.getText() + newMessage);
+                    }
+                }
+            }
+        }
+        catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, "Something went wrong...", "Error", JOptionPane.ERROR);
+            this.mainFrame.dispose();
+        }
+    }
+
     /**
      * Open the authorization window.
      */
     public void open() {
         this.mainFrame.setVisible(true);
+        Thread thread = new Thread(this::listenForResponses);
+        thread.setDaemon(true);
+        thread.start();
     }
 }

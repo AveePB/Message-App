@@ -86,11 +86,10 @@ public class Request {
         JSONObject obj = new JSONObject();
         obj.put("TYPE", Request.GET);
         obj.put("ACTION", Request.READING_CHAT);
-        obj.put("authUserNickname", friendNickname);
+        obj.put("friendNickname", friendNickname);
 
         Request.sendToServer(stream, obj);
     }
-
 
     /**
      * Creates the PUT request asking to create a new user.

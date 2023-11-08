@@ -768,3 +768,167 @@
 [Informatinonal] {Wed Nov 08 15:12:32 CET 2023}: STATUS CODE 400 sent to 127.0.0.1
 [Error] {Wed Nov 08 15:12:38 CET 2023}: java.net.SocketException: Connection reset
 [Informatinonal] {Wed Nov 08 15:12:38 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:38:57 CET 2023}: Server has started to listen for clients...
+[Informatinonal] {Wed Nov 08 15:38:59 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:39:06 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 15:39:06 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Error] {Wed Nov 08 15:39:12 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 15:39:12 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:55:35 CET 2023}: Server has started to listen for clients...
+[Informatinonal] {Wed Nov 08 15:55:45 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:55:50 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 15:55:50 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:55:50 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 15:55:50 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:55:50 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"zygfryd","ACTION":-1232,"TYPE":-11}
+[Warning] {Wed Nov 08 15:55:50 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Wed Nov 08 15:55:50 CET 2023}: STATUS CODE 400 sent to 127.0.0.1
+[Error] {Wed Nov 08 15:56:16 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 15:56:16 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:57:02 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:57:07 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 15:57:07 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:57:07 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 15:57:07 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:57:07 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"zygfryd","ACTION":-1232,"TYPE":-11}
+[Warning] {Wed Nov 08 15:57:07 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Wed Nov 08 15:57:07 CET 2023}: STATUS CODE 400 sent to 127.0.0.1
+[Error] {Wed Nov 08 15:57:11 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 15:57:11 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:57:33 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:57:37 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 15:57:37 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:57:37 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 15:57:37 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:57:37 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"zygfryd","ACTION":-1232,"TYPE":-11}
+[Warning] {Wed Nov 08 15:57:37 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Wed Nov 08 15:57:37 CET 2023}: STATUS CODE 400 sent to 127.0.0.1
+[Error] {Wed Nov 08 15:57:40 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 15:57:40 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:59:43 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:59:47 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 15:59:47 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:59:47 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 15:59:47 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:59:47 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"zygfryd","ACTION":-1232,"TYPE":-11}
+[Warning] {Wed Nov 08 15:59:47 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Wed Nov 08 15:59:47 CET 2023}: STATUS CODE 400 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:59:49 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"yokoko","ACTION":-1232,"TYPE":-11}
+[Warning] {Wed Nov 08 15:59:49 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Wed Nov 08 15:59:49 CET 2023}: STATUS CODE 400 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:59:50 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"Juz1ef","ACTION":-1232,"TYPE":-11}
+[Warning] {Wed Nov 08 15:59:50 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Wed Nov 08 15:59:50 CET 2023}: STATUS CODE 400 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 15:59:52 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"zygfryd","ACTION":-1232,"TYPE":-11}
+[Warning] {Wed Nov 08 15:59:52 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Wed Nov 08 15:59:52 CET 2023}: STATUS CODE 400 sent to 127.0.0.1
+[Error] {Wed Nov 08 16:00:17 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 16:00:17 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:00:51 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:00:55 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:00:55 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:00:55 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:00:55 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:00:55 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"zygfryd","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:00:55 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:01:00 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"Juzef","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:01:00 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:01:04 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"Sasuke","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:01:04 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:01:06 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"bambus","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:01:06 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:01:08 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"Bambik","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:01:08 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:01:09 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"Juzef","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:01:09 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:01:12 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"zygfryd","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:01:12 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Error] {Wed Nov 08 16:01:17 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 16:01:17 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:28 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:38 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:04:38 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:38 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:04:38 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:38 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"zygfryd","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:04:38 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:42 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1229,"recipientNickname":"zygfryd","message":"Hejo","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:04:42 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:47 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1229,"recipientNickname":"zygfryd","message":"Hejo","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:04:47 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:47 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1229,"recipientNickname":"zygfryd","message":"Hejo","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:04:47 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:47 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1229,"recipientNickname":"zygfryd","message":"Hejo","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:04:47 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:48 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1229,"recipientNickname":"zygfryd","message":"Hejo","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:04:48 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Error] {Wed Nov 08 16:04:51 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 16:04:51 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:53 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:59 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:04:59 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:59 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:04:59 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:04:59 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"zygfryd","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:04:59 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Error] {Wed Nov 08 16:05:04 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 16:05:04 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:06:28 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:06:32 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:06:32 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:06:32 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:06:32 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:06:32 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"zygfryd","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:06:32 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:06:44 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1229,"recipientNickname":"zygfryd","message":"Prepared to play?","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:06:44 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Error] {Wed Nov 08 16:06:54 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 16:06:54 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:07:30 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:07:34 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:07:34 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:07:34 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:07:34 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:07:34 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"zygfryd","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:07:34 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:07:39 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1229,"recipientNickname":"zygfryd","message":"Evveer","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:07:39 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:07:44 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1229,"recipientNickname":"zygfryd","message":"xD","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:07:44 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:07:47 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1229,"recipientNickname":"zygfryd","message":"XD","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:07:47 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:08:08 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1231,"newFriendNickname":"fdsadsffads","TYPE":-111}
+[Warning] {Wed Nov 08 16:08:08 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Wed Nov 08 16:08:08 CET 2023}: STATUS CODE 500 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:08:23 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1231,"TYPE":-111}
+[Warning] {Wed Nov 08 16:08:23 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Wed Nov 08 16:08:23 CET 2023}: STATUS CODE 400 sent to 127.0.0.1
+[Error] {Wed Nov 08 16:08:28 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 16:08:28 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:08 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:14 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"messi","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:11:14 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:14 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:11:14 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:14 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"zygfryd","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:11:14 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:22 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1231,"newFriendNickname":"jack","TYPE":-111}
+[Warning] {Wed Nov 08 16:11:22 CET 2023}: 127.0.0.1 has caused app.api.APIException: 
+[Informatinonal] {Wed Nov 08 16:11:22 CET 2023}: STATUS CODE 500 sent to 127.0.0.1
+[Error] {Wed Nov 08 16:11:28 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 16:11:28 CET 2023}: Server lost connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:30 CET 2023}: Server accepted connection with 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:37 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1230,"newUserNickname":"joha","newUserPassword":"1","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:11:37 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:37 CET 2023}: 127.0.0.1  has sent request {"authUserNickname":"joha","ACTION":-1233,"authUserPassword":"1","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:11:37 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:37 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1234,"TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:11:37 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:42 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1231,"newFriendNickname":"messi","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:11:42 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:42 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1232,"friendNickname":"messi","TYPE":-11}
+[Informatinonal] {Wed Nov 08 16:11:42 CET 2023}: STATUS CODE 200 sent to 127.0.0.1
+[Informatinonal] {Wed Nov 08 16:11:54 CET 2023}: 127.0.0.1  has sent request {"ACTION":-1229,"recipientNickname":"messi","message":"Hello wanna play?","TYPE":-111}
+[Informatinonal] {Wed Nov 08 16:11:54 CET 2023}: STATUS CODE 201 sent to 127.0.0.1
+[Error] {Wed Nov 08 16:11:58 CET 2023}: java.net.SocketException: Connection reset
+[Informatinonal] {Wed Nov 08 16:11:58 CET 2023}: Server lost connection with 127.0.0.1

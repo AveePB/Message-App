@@ -75,7 +75,7 @@ public class GETRequestHandler {
 
         Response response = request.createResponse();
         response.put("STATUS_CODE", StatusCode.OK.toInteger());
-        response.put("FRIENDS", db.getFriendList(currentUserId));
+        response.put("friendList", db.getFriendList(currentUserId));
 
         return response;
     }
