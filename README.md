@@ -35,7 +35,7 @@ It is used to change the most important application parameters.
 ## Server Usage
 It's recommended to run this application via the command line. If you follow the hint, you
 can stop the server at any time and see the server messages. It's required to put jar file
-to its parent directory (***.\Server***). You can use bat file to run your jar file.
+to its parent directory (***.\Server***). You can use the bat file to run your jar file.
 
 Jar files can be started by the following command:
 ```
@@ -44,7 +44,7 @@ Jar files can be started by the following command:
 
 ## Client Usage
 It's recommended to run this application via the command line or by double clicking on the jar file. 
-It's required to put jar file to its parent directory (***.\Client***). You can use bat file to run 
+It's required to put jar file to its parent directory (***.\Client***). You can use the bat file to run 
 your jar file.
 
 Jar files can be started by the following command:
