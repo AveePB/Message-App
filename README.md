@@ -35,18 +35,19 @@ It is used to change the most important application parameters.
 ## Server Usage
 It's recommended to run this application via the command line. If you follow the hint, you
 can stop the server at any time and see the server messages. It's required to put jar file
-to its parent directory (***.\Server***).
+to its parent directory (***.\Server***). You can use bat file to run your jar file.
 
-You can run jar file using the following command:
+Jar files can be started by the following command:
 ```
  java -jar server_file_name.jar
 ```
 
 ## Client Usage
 It's recommended to run this application via the command line or by double clicking on the jar file. 
-It's required to put jar file to its parent directory (***.\Client***).
+It's required to put jar file to its parent directory (***.\Client***). You can use bat file to run 
+your jar file.
 
-You can run jar file using the following command:
+Jar files can be started by the following command:
 ```
  java -jar client_file_name.jar
 ```
