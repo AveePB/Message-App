@@ -42,6 +42,12 @@ public class LogInButtonListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
+            if (this.nicknameTF.getText().length() == 0 || this.passwordPF.getPassword().length == 0) {
+                JOptionPane.showMessageDialog(null, "Empty field!", "Warning", JOptionPane.WARNING_MESSAGE);
+                return;
+            }
+
+
             Request.sendAuthenticationAction(this.sock.getOutputStream(), this.nicknameTF.getText(), new String(this.passwordPF.getPassword()));
             Response authResponse = new Response(this.sock.getInputStream());
 

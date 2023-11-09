@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0aaf4f0c-9a06-4584-9ec7-2b3c577f41a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/app/api/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/app/api/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/app/gui/authwindow/actionlisteners/LogInButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/app/gui/authwindow/actionlisteners/LogInButtonListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/app/gui/authwindow/actionlisteners/SignUpButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/app/gui/authwindow/actionlisteners/SignUpButtonListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/main/java/app/gui/mainwindow/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/app/gui/mainwindow/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/records.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/records.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/requesthandlers/GETRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/requesthandlers/GETRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/server/requesthandlers/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/server/requesthandlers/RequestHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

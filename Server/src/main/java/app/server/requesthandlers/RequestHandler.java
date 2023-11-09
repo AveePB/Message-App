@@ -86,18 +86,24 @@ public class RequestHandler {
             int newFriendId = this.db.getUserId(request.getString("newFriendNickname"));
 
             //Sends information to the friend about new friendship.
-            if (this.activeUsers.containsKey(newFriendId))
+            if (this.activeUsers.containsKey(newFriendId)) {
+                response.put("newFriendNickname", this.db.getUserNickname(this.currentUserId));
                 response.sendToClient(this.activeUsers.get(newFriendId));
+
+                response.put("newFriendNickname", this.db.getUserNickname(newFriendId));
+            }
         }
 
         else if (request.getAction() == Request.MSG_CREATION) {
             response = PUTRequestHandler.handleMsgCreationAction(this.db, isUserLoggedIn, this.currentUserId, request);
+            response.put("authorNickname", this.db.getUserNickname(this.currentUserId));
 
             int friendId = this.db.getUserId(request.getString("recipientNickname"));
 
             //Sends information to the friend about new message.
-            if (this.activeUsers.containsKey(friendId))
+            if (this.activeUsers.containsKey(friendId)) {
                 response.sendToClient(this.activeUsers.get(friendId));
+            }
         }
 
         else {
@@ -116,8 +122,10 @@ public class RequestHandler {
             response = GETRequestHandler.handleAuthenticationAction(this.db, isUserLoggedIn, request);
 
             //Sets current user id if authentication was successful.
-            if (response.getStatusCode() == StatusCode.OK.toInteger())
+            if (response.getStatusCode() == StatusCode.OK.toInteger()) {
                 this.currentUserId = this.db.getUserId(request.getString("authUserNickname"));
+                this.activeUsers.put(this.currentUserId, this.sock.getOutputStream());
+            }
         }
 
         else if (request.getAction() == Request.READING_CHAT) {

@@ -12,10 +12,5 @@ public class Main {
         catch (Exception ex) {
             Logger.logEMERG(ex.toString());
         }
-
-        /* LIST OF TASKS:
-            3.COMPLETE SERVER DOCS
-            4.START DEVELOPMENT ON THE APP!
-         */
     }
 }

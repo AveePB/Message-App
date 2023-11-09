@@ -202,13 +202,13 @@ public class MainWindow {
 
                     if (response.getAction() == Request.CHAT_CREATION) {
                         this.friendListCB.addItem(response.getString("newFriendNickname"));
-                        JOptionPane.showMessageDialog(null, "Check your friend list, you've got new friend :D.");
+                        JOptionPane.showMessageDialog(null, "Check your friend list, you've got new friend :D.", "Info", JOptionPane.INFORMATION_MESSAGE);
                     }
 
                     else if (response.getAction() == Request.MSG_CREATION) {
                         this.msgWorkshopTA.setText("");
 
-                        String newMessage = this.userNickname + ": " + response.getString("message") + '\n';
+                        String newMessage = response.getString("authorNickname") + ": " + response.getString("message") + '\n';
                         this.chatTA.setText(this.chatTA.getText() + newMessage);
                     }
                 }
