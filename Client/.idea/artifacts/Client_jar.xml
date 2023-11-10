@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Client_jar</output-path>
     <root id="archive" name="Client.jar">
       <element id="module-output" name="Client" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/json/json/20231013/json-20231013.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

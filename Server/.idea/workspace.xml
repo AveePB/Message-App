@@ -9,23 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07d9a687-ba16-4084-a334-0e88bf6c3202" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/api/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/api/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/api/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/api/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/api/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/api/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/windows/authwindow/actionlisteners/AL_LogInBtn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/windows/authwindow/actionlisteners/AL_LogInBtn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/windows/authwindow/actionlisteners/AL_SignUpBtn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/windows/authwindow/actionlisteners/AL_SignUpBtn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/windows/mainwindow/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/app/windows/mainwindow/MainWindow.java" afterDir="false" />
+    <list default="true" id="0aaf4f0c-9a06-4584-9ec7-2b3c577f41a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/ServerLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ServerLogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/RequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/db/Database.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,25 +27,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2WharIpw1sZFswNacnfHvN07Z18" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="20" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="20" />
+  </component>
+  <component name="ProjectId" id="2XLkPe008pIp3CbMqRy4jwjlPVw" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;cli__app&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Work/Desktop/MessageAppJava/Server&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "dev2",
+    "last_opened_file_path": "C:/Users/Work/Desktop/test01",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -73,11 +74,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="07d9a687-ba16-4084-a334-0e88bf6c3202" name="Changes" comment="" />
-      <created>1697187462912</created>
+      <changelist id="0aaf4f0c-9a06-4584-9ec7-2b3c577f41a5" name="Changes" comment="" />
+      <created>1698415724900</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1697187462912</updated>
+      <updated>1698415724900</updated>
     </task>
     <servers />
   </component>
