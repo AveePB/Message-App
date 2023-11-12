@@ -221,7 +221,7 @@ public class MainWindow {
     }
 
     /**
-     * Open the authorization window.
+     * Open the window.
      */
     public void open() {
         this.mainFrame.setVisible(true);
